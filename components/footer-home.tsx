@@ -1,8 +1,15 @@
+'use client'
 import { Phone, Heart } from 'lucide-react';
+import { useEffect } from 'react';
 
 export default function Footer() {
   const version = process.env.NEXT_PUBLIC_APP_VERSION || '0.1.0';
-
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.free-counters.org/count/xyz.js"; // your counter URL
+    script.async = true;
+    document.getElementById("counter")?.appendChild(script);
+  }, []);
   return (
     <footer className="border-t border-border bg-background/50 backdrop-blur-sm mt-12 py-6">
       <div className="container mx-auto px-4">
@@ -31,6 +38,13 @@ export default function Footer() {
         {/* Divider */}
         <div className="mt-6 pt-4 border-t border-border/50 text-center text-xs text-muted-foreground">
           <p>MCQ Test Series Viewer - All Rights Reserved</p>
+        </div>
+        <div className="mt-6 pt-4 border-t border-border/50 text-center text-xs text-muted-foreground flex flex-col items-center gap-3">
+          <a href="https://www.free-counters.org/" target="_blank" rel="noopener noreferrer">
+            Free Web Counter by Free-Counters.org
+          </a>
+                 <div id="counter"></div>
+
         </div>
       </div>
     </footer>
