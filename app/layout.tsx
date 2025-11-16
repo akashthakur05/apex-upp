@@ -2,32 +2,44 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import Footer from '@/components/footer-home';
+import CoachingList from '@/components/coaching-list'
+
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: 'MCQ Test Series Viewer',
   description: 'Browse and study MCQ questions from various coaching institutes mock tests',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/favicon-96x96.png',
+        type: 'image/png',
+        sizes: '96x96',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
+        url: '/favicon.svg',
         type: 'image/svg+xml',
       },
+      {
+        url: '/favicon.ico',
+        rel: 'shortcut icon',
+      },
     ],
-    apple: '/apple-icon.png',
+    apple: [
+      {
+        url: '/apple-touch-icon.png',
+        sizes: '180x180',
+      },
+    ],
   },
-}
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    title: 'UPSI',
+  },
+};
+
 
 export default function RootLayout({
   children,
@@ -37,7 +49,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>
