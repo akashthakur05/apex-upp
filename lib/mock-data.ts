@@ -4,7 +4,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
   {
     id: '1',
     name: 'TWA',
-    logo: '/twa.webp',
+    logo: '/TWA.webp',
     test_series_id: '36',
     repositry_url: '',
     folder_name:'TWAUPSI',
@@ -3766,17 +3766,26 @@ export const coachingInstitutes: CoachingInstitute[] = [
 
 
 export const sectionNameMap: SectionMap = {
-  '233': 'General Hindi & Comprehension',
+  '233': 'Maths',
   '234': 'Reasoning',
   '235': 'Numerical Ability',
   '236': 'General Knowledge',
   '237': 'English Language',
-  '238': 'Quantitative Aptitude',
+  '238': 'Basic Law/GK-GS/Constitution',
+  '208': 'Hindi',
+  '206': 'Basic Law/GK-GS/Constitution',
+
   '239': 'Verbal Ability',
   '240': 'Logical Reasoning',
+  '215': 'Basic Law/Constitution/General Knowledge',
+  '213': 'Hindi',
+  '222': 'Numerical & Mental Ability Test',
+  '223': 'Mental Aptitude/Intelligence/Reasoning',
+
   // Add more mappings as needed - the system will use section ID as fallback
 }
 
 export const getSectionName = (sectionId: string): string => {
-  return sectionNameMap[sectionId] || `Section ${sectionId}`
+  console.log(sectionId, sectionNameMap)
+  return sectionNameMap[sectionId.toString()] || `Section ${sectionId}`
 }
