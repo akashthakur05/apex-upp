@@ -3786,6 +3786,5 @@ export const sectionNameMap: SectionMap = {
 }
 
 export const getSectionName = (sectionId: string): string => {
-  console.log(sectionId, sectionNameMap)
   return sectionNameMap[sectionId.toString()] || `Section ${sectionId}`
 }

@@ -38,10 +38,8 @@ async function loadQuestions(folder_name: string, testId: string) {
   try {
     // Import JSON statically so Next can bundle it during export
     const data = await import(`@/data/${folder_name}/${testId}.json`)
-    console.log(`@/data/${folder_name}/${testId}.json`)
     return data.default ?? data
   } catch (e) {
-    console.error("JSON not found:", folder_name, testId)
     return null
   }
 }
