@@ -206,20 +206,43 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
     }
   }
 
-  const handleShare = () => {
-    const shareText = `${currentQuestion.question}\n\nA) ${currentQuestion.option_1}\nB) ${currentQuestion.option_2}\nC) ${currentQuestion.option_3}\nD) ${currentQuestion.option_4}`
+const handleShare = () => {
+  const pageUrl = window.location.href
 
-    if (navigator.share) {
-      navigator.share({
-        title: test.title,
-        text: shareText,
-      })
-    } else {
-      navigator.clipboard.writeText(shareText)
-      alert('Question copied to clipboard!')
-    }
-    setShowShareMenu(false)
+  // Use the raw HTML (question may contain markup/rich text)
+  const htmlContent = `
+    <div>
+      ${currentQuestion.question}
+      <br/><br/>
+      <strong>A)</strong> ${currentQuestion.option_1}<br/>
+      <strong>B)</strong> ${currentQuestion.option_2}<br/>
+      <strong>C)</strong> ${currentQuestion.option_3}<br/>
+      <strong>D)</strong> ${currentQuestion.option_4}
+      <br/><br/>
+      Link: <a href="${pageUrl}">${pageUrl}</a>
+    </div>
+  `
+
+  // Convert HTML → plain text fallback (clipboard sharing)
+  const tempElement = document.createElement("div")
+  tempElement.innerHTML = htmlContent
+  const plainText = tempElement.innerText + "\n\n" + pageUrl
+
+  if (navigator.share) {
+    // Many browsers don't support HTML share yet, so we send text + URL
+    navigator.share({
+      title: test.title,
+      text: plainText,
+      url: pageUrl
+    }).catch(() => {})
+  } else {
+    navigator.clipboard.writeText(plainText)
+    alert('Question + URL copied to clipboard!')
   }
+
+  setShowShareMenu(false)
+}
+
 
   const handleCompleteTest = () => {
     if (isTestComplete) {
