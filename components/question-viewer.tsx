@@ -8,7 +8,7 @@ import SolutionModal from './solution-modal'
 import HTMLRenderer from './html-renderer'
 import { getSectionName } from '@/lib/mock-data'
 import { useState, useEffect } from 'react'
-import { isBookmarked,addBookmark, removeBookmark, markTestComplete, unmarkTestComplete, isTestComplete as checkTestComplete } from '@/lib/bookmark-storage'
+import { isBookmarked, addBookmark, removeBookmark, markTestComplete, unmarkTestComplete, isTestComplete as checkTestComplete } from '@/lib/bookmark-storage'
 // import { addBookmark, removeBookmark, isBookmarked, markTestComplete, unmarkTestComplete, isTestComplete as checkTestComplete } from '@/lib/bookmark-storage'
 
 interface Props {
@@ -37,7 +37,7 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY
-      
+
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         // Scrolling down
         setHeaderVisible(false)
@@ -151,18 +151,18 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
 
     Array.from(printGroupedBySection.entries()).forEach(([sectionId, sectionQuestions]) => {
       html += `<div class="section-title">${getSectionName(sectionId)}</div>`
-      
+
       sectionQuestions.forEach((q, idx) => {
         html += `
           <div class="question-block">
             <div class="question-num">Q${idx + 1}. ${q.question}</div>
             <div class="options">
               ${[1, 2, 3, 4].map((optNum) => {
-                const optionKey = `option_${optNum}` as keyof Question
-                const optionText = q[optionKey] as string
-                const isCorrect = q.answer === String(optNum)
-                return `<div class="option"><span class="option-label">${String.fromCharCode(64 + optNum)})</span> ${optionText} ${isCorrect ? '✓' : ''}</div>`
-              }).join('')}
+          const optionKey = `option_${optNum}` as keyof Question
+          const optionText = q[optionKey] as string
+          const isCorrect = q.answer === String(optNum)
+          return `<div class="option"><span class="option-label">${String.fromCharCode(64 + optNum)})</span> ${optionText} ${isCorrect ? '✓' : ''}</div>`
+        }).join('')}
             </div>
             <div class="marks">Marks: +${q.positive_marks} / ${q.negative_marks}</div>
           </div>
@@ -183,8 +183,8 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
   }
 
   const toggleSection = (sectionId: string) => {
-    setSelectedSections(prev => 
-      prev.includes(sectionId) 
+    setSelectedSections(prev =>
+      prev.includes(sectionId)
         ? prev.filter(s => s !== sectionId)
         : [...prev, sectionId]
     )
@@ -192,7 +192,7 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
 
   const handleBookmark = () => {
     const isCurrentlyBookmarked = bookmarkedQuestions.has(currentQuestion.id)
-    
+
     if (isCurrentlyBookmarked) {
       removeBookmark(currentQuestion.id, coaching.id)
       setBookmarkedQuestions(prev => {
@@ -208,7 +208,7 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
 
   const handleShare = () => {
     const shareText = `${currentQuestion.question}\n\nA) ${currentQuestion.option_1}\nB) ${currentQuestion.option_2}\nC) ${currentQuestion.option_3}\nD) ${currentQuestion.option_4}`
-    
+
     if (navigator.share) {
       navigator.share({
         title: test.title,
@@ -257,9 +257,8 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
         {sidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
       </button>
 
-      <aside className={`fixed md:static inset-0 z-50 md:z-auto w-full md:w-64 bg-card border-r transform transition-transform duration-300 ease-in-out md:translate-x-0 ${
-        sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-      }`}>
+      <aside className={`fixed md:static inset-0 z-50 md:z-auto w-full md:w-64 bg-card border-r transform transition-transform duration-300 ease-in-out md:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}>
 
         <div className="h-full md:h-screen overflow-y-auto p-4 flex flex-col pt-20 md:pt-4">
           <div className="flex items-center justify-between mb-4">
@@ -272,12 +271,12 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
               <X className="w-4 h-4" />
             </button>
           </div>
-          
+
           <div className="flex-1 mb-4 space-y-4 overflow-y-auto">
             {sectionArray.map((section) => {
               const sectionQuestions = groupedBySection.get(section) || []
               const sectionName = getSectionName(section)
-              
+
               return (
                 <div key={section}>
                   <h4 className="text-xs font-semibold text-muted-foreground uppercase mb-2 px-2">
@@ -295,11 +294,10 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
                             setShowSolution(false)
                             setSidebarOpen(false)
                           }}
-                          className={`aspect-square rounded text-xs font-medium transition-all flex items-center justify-center ${
-                            currentIndex === globalIdx
+                          className={`aspect-square rounded text-xs font-medium transition-all flex items-center justify-center ${currentIndex === globalIdx
                               ? 'bg-primary text-primary-foreground ring-2 ring-primary'
                               : 'bg-muted hover:bg-muted/80 text-foreground'
-                          }`}
+                            }`}
                         >
                           {globalIdx + 1}
                         </button>
@@ -330,9 +328,8 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        <div className={`sticky top-0 z-40 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60 transition-all duration-300 ${
-          headerVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
-        }`}>
+        <div className={`sticky top-0 z-40 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60 transition-all duration-300 ${headerVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+          }`}>
           <div className="max-w-4xl mx-auto px-4 py-4">
             <Link href={`/coaching/${coaching.id}`} className="inline-flex items-center gap-2 text-primary hover:underline mb-4">
               <ChevronLeft className="w-4 h-4" />
@@ -347,9 +344,8 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
           </div>
         </div>
 
-        <div className={`sticky z-40 border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60 overflow-x-auto transition-all duration-300 ${
-          headerVisible ? 'top-16' : 'top-0'
-        }`}>
+        <div className={`sticky z-40 border-b bg-card/80 backdrop-blur supports-[backdrop-filter]:bg-card/60 overflow-x-auto transition-all duration-300 ${headerVisible ? 'top-16' : 'top-0'
+          }`}>
           <div className="max-w-4xl mx-auto px-4 flex gap-2">
             {sectionArray.map((section) => {
               const sectionQCount = groupedBySection.get(section)?.length || 0
@@ -368,11 +364,10 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
                       setShowSolution(false)
                     }
                   }}
-                  className={`px-4 py-3 font-medium whitespace-nowrap text-sm border-b-2 transition-colors cursor-pointer hover:text-foreground ${
-                    isActive
+                  className={`px-4 py-3 font-medium whitespace-nowrap text-sm border-b-2 transition-colors cursor-pointer hover:text-foreground ${isActive
                       ? 'border-primary text-primary'
                       : 'border-transparent text-muted-foreground'
-                  }`}
+                    }`}
                 >
                   {sectionName} ({sectionQCount})
                 </button>
@@ -416,11 +411,11 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
                   const isCorrect = currentQuestion.answer === String(optionNum)
                   const isSelected = selectedOption === optionNum
                   const showCorrectAnswer = selectedOption !== null && selectedOption !== parseInt(currentQuestion.answer)
-                  
+
                   // Determine styling
                   let bgClass = 'border-border hover:border-primary'
                   let textClass = ''
-                  
+
                   if (selectedOption === null) {
                     // No interaction yet - normal state
                     bgClass = 'border-border hover:border-primary'
@@ -446,17 +441,16 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
                       disabled={selectedOption !== null}
                     >
                       <div className="flex gap-3">
-                        <div className={`flex-shrink-0 w-6 h-6 rounded border-2 flex items-center justify-center font-semibold ${
-                          selectedOption === null
+                        <div className={`flex-shrink-0 w-6 h-6 rounded border-2 flex items-center justify-center font-semibold ${selectedOption === null
                             ? 'border-border'
                             : isSelected && !isCorrect
-                            ? 'border-red-500 text-red-600'
-                            : showCorrectAnswer && isCorrect
-                            ? 'border-green-500 text-green-600'
-                            : isSelected && isCorrect
-                            ? 'border-green-500 text-green-600'
-                            : 'border-border'
-                        }`}>
+                              ? 'border-red-500 text-red-600'
+                              : showCorrectAnswer && isCorrect
+                                ? 'border-green-500 text-green-600'
+                                : isSelected && isCorrect
+                                  ? 'border-green-500 text-green-600'
+                                  : 'border-border'
+                          }`}>
                           {String.fromCharCode(64 + optionNum)}
                         </div>
                         <div className={`flex-1 min-w-0 ${textClass}`}>
@@ -476,6 +470,27 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
                 View Solution
               </button>
             </Card>
+            <div className="fixed bottom-0 left-0 right-0 md:static border-t bg-card p-4 md:border-t-0 md:mb-8">
+              <div className="max-w-4xl mx-auto flex gap-3 justify-between">
+                <button
+                  onClick={handlePrevQuestion}
+                  disabled={currentIndex === 0}
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-card border hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  <span className="hidden sm:inline">Previous</span>
+                </button>
+
+                <button
+                  onClick={handleNextQuestion}
+                  disabled={currentIndex === questions.length - 1}
+                  className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-card border hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                >
+                  <span className="hidden sm:inline">Next</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
 
             {/* Bookmark and Share Buttons */}
             <div className="flex justify-between items-start mb-6">
@@ -485,11 +500,10 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
               <div className="flex gap-2 ml-4">
                 <button
                   onClick={handleBookmark}
-                  className={`p-2 rounded-lg transition-colors ${
-                    bookmarkedQuestions.has(currentQuestion.id)
+                  className={`p-2 rounded-lg transition-colors ${bookmarkedQuestions.has(currentQuestion.id)
                       ? 'bg-primary text-primary-foreground'
                       : 'bg-muted text-foreground hover:bg-muted/80'
-                  }`}
+                    }`}
                   title="Bookmark question"
                 >
                   <Bookmark className="w-5 h-5" fill={bookmarkedQuestions.has(currentQuestion.id) ? 'currentColor' : 'none'} />
@@ -521,11 +535,10 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
             {/* Complete Test Button - Toggle */}
             <button
               onClick={handleCompleteTest}
-              className={`w-full px-4 py-2 rounded-lg font-medium transition-colors ${
-                isTestComplete
+              className={`w-full px-4 py-2 rounded-lg font-medium transition-colors ${isTestComplete
                   ? 'bg-green-500 text-white hover:bg-green-600'
                   : 'bg-secondary text-secondary-foreground hover:bg-secondary/90'
-              }`}
+                }`}
             >
               {isTestComplete ? 'Unmark Test as Complete' : 'Mark Test as Complete'}
             </button>
@@ -534,7 +547,7 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
       </div>
 
       {/* Solution Modal */}
-      <SolutionModal 
+      <SolutionModal
         question={currentQuestion}
         isOpen={showSolution}
         onClose={() => setShowSolution(false)}
