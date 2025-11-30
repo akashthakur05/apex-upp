@@ -40,6 +40,7 @@ async function loadQuestions(folder_name: string, testId: string) {
     const data = await import(`@/data/${folder_name}/${testId}.json`)
     return data.default ?? data
   } catch (e) {
+    console.log("Failed to Fetch :", folder_name, testId)
     return null
   }
 }
@@ -47,6 +48,7 @@ export default async function TestPage({ params }: Props) {
   const { coachingId, testId } = await params
   const coaching = coachingInstitutes.find(c => c.id === coachingId)
   const test = coaching?.tests.find(t => t.id === testId)
+  console.log(coaching?.folder_name)
   const questions = await loadQuestions(coaching?.folder_name || '', testId)
 
   if (!coaching || !test) {

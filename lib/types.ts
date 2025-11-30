@@ -25,7 +25,7 @@ export interface TestTitle {
   id: string
   title: string
   test_series_id: string
-  free_flag: number
+  free_flag?: any
   time: string
   questions: string
   test_solutions_video: string
@@ -74,7 +74,19 @@ export interface TestTitle {
   test_questions_url_2: string
   remaining_attempt: string
   exam_theme: string
-  language: string
+  language: string,
+  enable_random_test_generator:any,
+  terms_url?:any
+  positive_marks?: string
+  negative_marks?: string
+  type?: any
+  option_count?:any
+  solution_url?:any
+  solution_pdf?:any
+  solution_pdf2?:any
+  remainingtime?:any
+  enable_negative_marks_for_fifth_option?:any
+  all_question_compulsary?:any
 
 }
 
