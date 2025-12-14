@@ -1,148 +1,177 @@
-
-
 'use client'
-import Link from "next/link";
-import {  sectionNameMap, coachingInstitutes } from '@/lib/mock-data'
-import {  ChevronLeft, ChevronRight } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+
+import Link from "next/link"
+import { sectionNameMap, coachingInstitutes } from '@/lib/mock-data'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useState } from 'react'
 import HTMLRenderer from './html-renderer'
 import { Card } from './ui/card'
 
 interface Props {
-    coachingId: string;
-    sectionId: string
-    questionlist:any[]
+  coachingId: string
+  sectionId: string
+  questionlist: any[]
 }
-const QUESTIONS_PER_PAGE = 5
-export default function  SectionViewer(props: Props) {
-    const [coachingId, sectionId,questionlist] = [(props as any).coachingId, (props as any).sectionId, (props as any).questionlist]
-    const [currentPage, setCurrentPage] = useState(0)
-    const [isLoading, setIsLoading] = useState(false)
 
-    const [paginatedQuestions, setPaginatedQuestions] = useState([])
+export default function SectionViewer({ coachingId, sectionId, questionlist }: Props) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [selectedOption, setSelectedOption] = useState<number | null>(null)
 
-    useEffect(() => {
-        setIsLoading(true)
-        // Simulate async loading for better performance
-        const timer = setTimeout(() => {
-            const start = currentPage * QUESTIONS_PER_PAGE
-            const end = start + QUESTIONS_PER_PAGE
-            setPaginatedQuestions(questionlist.slice(start, end))
-            setIsLoading(false)
-        }, 100)
+  const totalQuestions = questionlist.length
+  const currentQuestion = questionlist[currentIndex]
 
-        return () => clearTimeout(timer)
-    }, [currentPage, questionlist])
+  const sectionName = sectionNameMap[sectionId] || `Section ${sectionId}`
+  const coaching = coachingInstitutes.find(c => c.id === coachingId)
 
-    const totalPages = Math.ceil(questionlist.length / QUESTIONS_PER_PAGE)
-    const sectionName = sectionNameMap[sectionId] || `Section ${sectionId}`
-    const coaching = coachingInstitutes.find((c) => c.id === coachingId)
+  const handleNext = () => {
+    if (currentIndex < totalQuestions - 1) {
+      setCurrentIndex(i => i + 1)
+      setSelectedOption(null)
+    }
+  }
 
-    return (
-        <main className="min-h-screen bg-background">
-            <div className="sticky top-0 z-10 border-b bg-card/95 backdrop-blur">
-                <div className="max-w-4xl mx-auto px-4 py-4">
-                    <Link
-                        href={`/coaching/${coachingId}`}
-                        className="inline-flex items-center gap-2 text-primary hover:underline mb-4"
-                    >
-                        <ChevronLeft className="w-4 h-4" />
-                        Back to {coaching?.name} Tests
-                    </Link>
-                    <h1 className="text-2xl md:text-3xl font-bold text-foreground">{sectionName}</h1>
-                    <p className="text-sm text-muted-foreground mt-1">
-                        {questionlist.length} Total Questions • Page {currentPage + 1} of {totalPages}
-                    </p>
-                </div>
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(i => i - 1)
+      setSelectedOption(null)
+    }
+  }
+
+  const handleOptionClick = (opt: number) => {
+    if (selectedOption === null) {
+      setSelectedOption(opt)
+    }
+  }
+
+  return (
+    <main className="min-h-screen bg-background">
+      {/* HEADER */}
+      <div className="sticky top-0 z-40 border-b bg-card/95 backdrop-blur">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <Link
+            href={`/coaching/${coachingId}`}
+            className="inline-flex items-center gap-2 text-primary hover:underline mb-3"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            Back to {coaching?.name} Tests
+          </Link>
+
+          <h1 className="text-2xl font-bold">{sectionName}</h1>
+
+          <div className="flex justify-between text-sm text-muted-foreground mt-1">
+            <span>
+              Question {currentIndex + 1} / {totalQuestions}
+            </span>
+            <span>{coaching?.name}</span>
+          </div>
+
+          {/* TOP NAV (DESKTOP) */}
+          <div className="hidden md:flex justify-between mt-4">
+            <button
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg border bg-card hover:bg-muted disabled:opacity-50"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              Previous
+            </button>
+
+            <button
+              onClick={handleNext}
+              disabled={currentIndex === totalQuestions - 1}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg border bg-card hover:bg-muted disabled:opacity-50"
+            >
+              Next
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* QUESTION */}
+      <div className="max-w-4xl mx-auto px-4 py-8 pb-28 md:pb-8">
+        <Card className="p-6 md:p-8">
+          {/* QUESTION TEXT */}
+          <div className="mb-8 flex gap-4">
+            <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
+              {currentIndex + 1}
             </div>
+            <div className="flex-1">
+              <HTMLRenderer html={currentQuestion.question} />
+            </div>
+          </div>
 
-            <div className="max-w-4xl mx-auto px-4 py-8">
-                <div className="space-y-6">
-                    {isLoading ? (
-                        <div className="flex items-center justify-center py-12">
-                            <div className="text-muted-foreground">Loading questions...</div>
-                        </div>
-                    ) : paginatedQuestions.length > 0 ? (
-                        paginatedQuestions.map((q:any, idx) => (
-                            <Card key={q.id} className="p-6">
-                                <div className="mb-6">
-                                    <div className="flex gap-4">
-                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
-                                            {currentPage * QUESTIONS_PER_PAGE + idx + 1}
-                                        </div>
-                                        <div className="flex-1 min-w-0">
-                                            <HTMLRenderer html={q.question} />
-                                        </div>
-                                    </div>
-                                </div>
+          {/* OPTIONS */}
+          <div className="space-y-3">
+            {[1, 2, 3, 4].map((opt) => {
+              const optionKey = `option_${opt}`
+              const optionText = currentQuestion[optionKey]
+              const isCorrect = currentQuestion.answer === String(opt)
+              const isSelected = selectedOption === opt
+              const revealCorrect =
+                selectedOption !== null && selectedOption !== Number(currentQuestion.answer)
 
-                                <div className="space-y-3">
-                                    {[1, 2, 3, 4].map((optNum) => {
-                                        const optionKey = `option_${optNum}` as keyof typeof q
-                                        const optionText = q[optionKey] as string
-                                        const isCorrect = q.answer === String(optNum)
+              let borderClass = 'border-border'
+              let textClass = ''
 
-                                        return (
-                                            <div
-                                                key={optNum}
-                                                className={`p-4 rounded-lg border-2 flex gap-3 ${isCorrect ? "border-green-500 bg-green-50 dark:bg-green-950" : "border-border"
-                                                    }`}
-                                            >
-                                                <div
-                                                    className={`flex-shrink-0 w-6 h-6 rounded border-2 flex items-center justify-center font-semibold ${isCorrect ? "border-green-500 text-green-600" : "border-border"
-                                                        }`}
-                                                >
-                                                    {String.fromCharCode(64 + optNum)}
-                                                </div>
-                                                <div className={isCorrect ? "text-green-600" : ""}>
-                                                    <HTMLRenderer html={optionText} />
-                                                </div>
-                                                {isCorrect && <span className="ml-auto text-green-600 font-semibold">✓</span>}
-                                            </div>
-                                        )
-                                    })}
-                                </div>
+              if (selectedOption !== null) {
+                if (isSelected && !isCorrect) {
+                  borderClass = 'border-red-500 bg-red-50 dark:bg-red-950'
+                  textClass = 'text-red-600'
+                } else if ((isCorrect && revealCorrect) || (isCorrect && isSelected)) {
+                  borderClass = 'border-green-500 bg-green-50 dark:bg-green-950'
+                  textClass = 'text-green-600'
+                }
+              }
 
-                                <div className="mt-4 pt-4 border-t text-sm text-muted-foreground">
-                                    Marks: +{q.positive_marks} / {q.negative_marks}
-                                </div>
-                            </Card>
-                        ))
-                    ) : (
-                        <Card className="p-8 text-center text-muted-foreground">
-                            No questions found in this section for {coaching?.name}
-                        </Card>
-                    )}
-                </div>
-
-                {/* Pagination Controls */}
-                {totalPages > 1 && (
-                    <div className="flex items-center justify-between mt-8 pt-8 border-t">
-                        <button
-                            onClick={() => setCurrentPage((p) => Math.max(0, p - 1))}
-                            disabled={currentPage === 0}
-                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card border hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                        >
-                            <ChevronLeft className="w-4 h-4" />
-                            Previous
-                        </button>
-
-                        <div className="text-sm text-muted-foreground">
-                            Page {currentPage + 1} of {totalPages}
-                        </div>
-
-                        <button
-                            onClick={() => setCurrentPage((p) => Math.min(totalPages - 1, p + 1))}
-                            disabled={currentPage === totalPages - 1}
-                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card border hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                        >
-                            Next
-                            <ChevronRight className="w-4 h-4" />
-                        </button>
+              return (
+                <button
+                  key={opt}
+                  onClick={() => handleOptionClick(opt)}
+                  disabled={selectedOption !== null}
+                  className={`w-full text-left p-4 rounded-lg border-2 transition ${borderClass}`}
+                >
+                  <div className="flex gap-3">
+                    <div className={`w-6 h-6 rounded border flex items-center justify-center font-semibold ${textClass}`}>
+                      {String.fromCharCode(64 + opt)}
                     </div>
-                )}
-            </div>
-        </main>
-    )
-    return
+                    <div className={`flex-1 ${textClass}`}>
+                      <HTMLRenderer html={optionText} />
+                    </div>
+                  </div>
+                </button>
+              )
+            })}
+          </div>
+
+          <div className="mt-6 pt-4 border-t text-sm text-muted-foreground">
+            Marks: +{currentQuestion.positive_marks} / {currentQuestion.negative_marks}
+          </div>
+        </Card>
+
+        {/* BOTTOM NAV (MOBILE + DESKTOP) */}
+        <div className="fixed md:static bottom-0 left-0 right-0 bg-card border-t p-4">
+          <div className="max-w-4xl mx-auto flex gap-3 justify-between">
+            <button
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-lg border hover:bg-muted disabled:opacity-50"
+            >
+              <ChevronLeft className="w-4 h-4" />
+              Previous
+            </button>
+
+            <button
+              onClick={handleNext}
+              disabled={currentIndex === totalQuestions - 1}
+              className="flex-1 md:flex-none flex items-center justify-center gap-2 px-4 py-2 rounded-lg border hover:bg-muted disabled:opacity-50"
+            >
+              Next
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  )
 }
