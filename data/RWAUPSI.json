@@ -2,6 +2,63 @@
     "status": 200,
     "test_titles": [
         {
+            "id": "28722",
+            "title": "UPP SI (28 December 2025)",
+            "test_series_id": "407",
+            "free_flag": 1,
+            "time": "120",
+            "questions": "160",
+            "test_solutions_video": "",
+            "test_solutions_link": "",
+            "show_solutions_video": "1",
+            "marks": "400",
+            "partial_marking": "1",
+            "partial_scoring_scheme": "0",
+            "is_completed": false,
+            "is_test_attempted": false,
+            "pdf_url": "",
+            "save_flag": "0",
+            "show_result": "1",
+            "result_date_time": "2025-12-21 06:20:09",
+            "show_rank": "1",
+            "show_solutions": "0",
+            "show_pause": "0",
+            "attempt_enabled": "1",
+            "max_test_attempt": "1",
+            "attempt_mandatory": "0",
+            "date_time": "2025-12-28 06:00:00",
+            "upcoming_date_time": "2025-12-28 06:00:00",
+            "enddatetime": "2027-12-21 06:18:23",
+            "shuffle_questions": "0",
+            "shuffle_options": "0",
+            "show_sectionselector": "0",
+            "minimumsection": "0",
+            "maximumsection": "100",
+            "password": "",
+            "telegram_link": "https:\/\/t.me\/+i7Q9NNSGL-M4ZTE1",
+            "telegram_rank": "-1",
+            "telegram_score": "350.00",
+            "cutoff_score": "330.00",
+            "enable_calculator": "0",
+            "enable_questionpaper": "0",
+            "ui_type": "DEFAULT",
+            "show_total_students": "1",
+            "show_percentile": "1",
+            "show_solutions_image": "0",
+            "test_solutions_image": "",
+            "show_solutions_pdf": "0",
+            "test_solutions_pdf": "",
+            "restrict_part_switching": "0",
+            "enable_random_test_generator": "0",
+            "test_solutions_pdf2": "",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/28722\/28722_questions0.871118484900969.json",
+            "test_questions_url_2": "",
+            "remaining_attempt": "1",
+            "exam_theme": "For All",
+            "language": "hi",
+            "all_question_compulsary": "0"
+        },
+        {
             "id": "28402",
             "title": "UPP SI (21 December 2025)",
             "test_series_id": "407",
@@ -21,7 +78,7 @@
             "show_result": "1",
             "result_date_time": "2025-12-14 13:03:02",
             "show_rank": "1",
-            "show_solutions": "0",
+            "show_solutions": "1",
             "show_pause": "0",
             "attempt_enabled": "1",
             "max_test_attempt": "1",
@@ -51,11 +108,12 @@
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/28402\/28402_questions0.4772813858507572.json",
+            "test_questions_url": "https:\/\/appx-content-v2.classx.co.in\/test_title_question\/rozgar_db\/28402\/28402_questions0.19577963224220818.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "28033",
@@ -111,7 +169,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "27531",
@@ -167,7 +226,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "26860",
@@ -219,11 +279,12 @@
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/appx-content-v2.classx.co.in\/test_title_question\/rozgar_db\/26860\/26860_questions0.22050304053373782.json",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/26860\/26860_questions0.3365636016569078.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "26536",
@@ -279,7 +340,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "26234",
@@ -335,7 +397,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "25745",
@@ -391,7 +454,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "25407",
@@ -447,7 +511,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "25226",
@@ -503,7 +568,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "24807",
@@ -555,11 +621,12 @@
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/24807\/24807_questions0.6624169332166033.json",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/24807\/24807_questions0.619627062523452.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "24404",
@@ -615,7 +682,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "24141",
@@ -632,7 +700,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-05-0.8859053959348964.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTA1LTAuODg1OTA1Mzk1OTM0ODk2NC5wZGY&Expires=1766306064&KeyName=appx-pdf-keyset&Signature=hQcRznoqiy5ul4mitOH9vXt22Mr3lo_JZRJutuygVsmOcbH8jccFcDJebMWm4KN_OOTlkI9Fl3gt1zuGHpeFAg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-05-0.8859053959348964.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTA1LTAuODg1OTA1Mzk1OTM0ODk2NC5wZGY&Expires=1766887695&KeyName=appx-pdf-keyset&Signature=goT-xODP8DZ-NegTVzKd7VAPpMnYrHgoFHYHgnkWXGEHiHyEEqzoLrGGWJXs8q9dW4iVsX0BZlA8B1ZB5k_VBQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -671,7 +739,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "23768",
@@ -688,7 +757,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-28-0.8267764948093868.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTI4LTAuODI2Nzc2NDk0ODA5Mzg2OC5wZGY&Expires=1766305698&KeyName=appx-pdf-keyset&Signature=PwMGE_p4e8lEt9XpCmn1RMBqFJK99rLkjJeiftJh8UOwzsudfzhUxHRPzaEjlxWxZcMhhq0o3lMFxHBtMAsiAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-28-0.8267764948093868.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTI4LTAuODI2Nzc2NDk0ODA5Mzg2OC5wZGY&Expires=1766887707&KeyName=appx-pdf-keyset&Signature=gPajhjnR8vHlz7n8b0hC-5BKXqHjB8nnTkqv6-r1bdNxxJeObzPdw5JIFciOgYyCKbkgWAwTTmGw_HaZAASJAw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -727,7 +796,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "23322",
@@ -744,7 +814,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-21-0.8061082648204303.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTIxLTAuODA2MTA4MjY0ODIwNDMwMy5wZGY&Expires=1766302022&KeyName=appx-pdf-keyset&Signature=zdlOyaV5OywsydxCaFEhQH5UJbc929vdtzj6qztVkK4FmTzjCEU9bDlCupyZHYgmIAubm5snoz4NdVI0jH1sBg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-21-0.8061082648204303.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTIxLTAuODA2MTA4MjY0ODIwNDMwMy5wZGY&Expires=1766888643&KeyName=appx-pdf-keyset&Signature=zAXj_pJrqOKwHoT7WD9o6AC_wvqNdrYcn_Ubdr-VGZDHoWbm7-ilZJx_YcRmDeUZZzm70U63ke05u5ipDkAeAA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -783,7 +853,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "22952",
@@ -800,7 +871,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-14-0.2710154123148175.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTE0LTAuMjcxMDE1NDEyMzE0ODE3NS5wZGY&Expires=1766304704&KeyName=appx-pdf-keyset&Signature=QyTPWeP_InJTyLkJ8DZ90ikp3IiyLPY7RLWyvE-IZxB_TPZrX6R_aPtjZHn-78JfdkKFmEd5W9JhEsGkCdGLBg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-14-0.2710154123148175.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTE0LTAuMjcxMDE1NDEyMzE0ODE3NS5wZGY&Expires=1766884243&KeyName=appx-pdf-keyset&Signature=Djz8893lvQZTYOd2u1C1irra5X4vqhK0jiOqJWULI6DPqyl2c-nujsZEgdOuQAvRtH5Xa2PvdNlhEeKpqWIZCA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -839,7 +910,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "22594",
@@ -856,7 +928,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-07-0.48831040545886517.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTA3LTAuNDg4MzEwNDA1NDU4ODY1MTcucGRm&Expires=1766305804&KeyName=appx-pdf-keyset&Signature=m2tVt0122l8VT94NsCPag0_vbR6qHO9YzUP8qaWi93zze2MUCsYqL9-IL-GiayPBmwxtRhYOIhq0pX_8244TAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-07-0.48831040545886517.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTA3LTAuNDg4MzEwNDA1NDU4ODY1MTcucGRm&Expires=1766884441&KeyName=appx-pdf-keyset&Signature=PtaOK-dZkGH-bbkusLmyq8-7P6JbFPX9hSLxjIlyKQUX6EZLuKxSs26Y4HsZKeHbSQSFq8AYg0n70RAsbjDlDw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -895,7 +967,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "22226",
@@ -912,7 +985,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-31-0.21892882956095916.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTMxLTAuMjE4OTI4ODI5NTYwOTU5MTYucGRm&Expires=1766296712&KeyName=appx-pdf-keyset&Signature=jQQs0-OAIvd1Svga7wVT0b4mb8KMupU8l1TEj7v2Sxhvdj8diESuh2ZOQDDNR0teCv349z8kpE9ZhSECpeeXDA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-31-0.21892882956095916.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTMxLTAuMjE4OTI4ODI5NTYwOTU5MTYucGRm&Expires=1766888665&KeyName=appx-pdf-keyset&Signature=1axgeowyxUKtWKrbtqCNRwntjgDcA232jwvB3j8hlaRnJUEF08T_G21Cg2BdfRobjfum3okqbAu9_brrzmCJAA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -951,7 +1024,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "21859",
@@ -968,7 +1042,7 @@
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-24-0.7977350829866215.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTI0LTAuNzk3NzM1MDgyOTg2NjIxNS5wZGY&Expires=1766304035&KeyName=appx-pdf-keyset&Signature=10NCjh7bxKoHcm-psEMHW4uWp0QDcvf7D2zKFKPLLu0micGpqzZDVtdvlYGVqUD7NzgXwY5PBjOX3fTUyoRnCg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-24-0.7977350829866215.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTI0LTAuNzk3NzM1MDgyOTg2NjIxNS5wZGY&Expires=1766884494&KeyName=appx-pdf-keyset&Signature=-Aume6h78Fv38503IVbud8OnWzTWQYvHgmk1LLofejWQMZ7FNsDv1mniwhBgHdEgR-L9Hz2Uxaacwd6lH8UrBw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -1007,7 +1081,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "21376",
@@ -1063,7 +1138,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "21160",
@@ -1119,7 +1195,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "20649",
@@ -1175,7 +1252,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "20527",
@@ -1231,7 +1309,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "20192",
@@ -1287,7 +1366,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19936",
@@ -1343,7 +1423,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19725",
@@ -1399,7 +1480,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19391",
@@ -1455,7 +1537,8 @@
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19528\/19528_questions0.8502426177597855.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19227",
@@ -1507,11 +1590,12 @@
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19227\/19227_questions0.48499599610556887.json",
+            "test_questions_url": "https:\/\/appx-content-v2.classx.co.in\/test_title_question\/rozgar_db\/19227\/19227_questions0.4048564159574618.json",
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19228\/19228_questions0.20747409379787285.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19000",
@@ -1567,7 +1651,8 @@
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19001\/19001_questions0.5765152004034144.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "18887",
@@ -1623,7 +1708,8 @@
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/18888\/18888_questions0.7261459495164903.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "18342",
@@ -1679,7 +1765,8 @@
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/18344\/18344_questions0.5712198010161037.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "18005",
@@ -1735,7 +1822,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17743",
@@ -1791,7 +1879,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17542",
@@ -1847,7 +1936,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17290",
@@ -1899,11 +1989,12 @@
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/17290\/17290_questions0.11482824508519307.json",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/17290\/17290_questions0.19908837142266878.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17021",
@@ -1959,7 +2050,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "16758",
@@ -2015,7 +2107,8 @@
             "test_questions_url_2": "",
             "remaining_attempt": "0",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "16627",
@@ -2071,10 +2164,42 @@
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         }
     ],
     "test_pdf": [
+        {
+            "id": "679",
+            "title": "UPP SI (28 December 2025)",
+            "test_series_id": "407",
+            "free_flag": 1,
+            "time": "120",
+            "questions": "160",
+            "marks": "400",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-27-0_4581844854789171.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMjctMF80NTgxODQ0ODU0Nzg5MTcxLnBkZg&Expires=1766886563&KeyName=appx-pdf-keyset&Signature=cskP8bOkuqGDw-VS1DjIkC72vLE5J2AfSPYSjuoiXfiKggplYXg7Ncs8onajyTMb8q2inVpMzZRkuQZUsZdMDQ",
+            "save_flag": "1",
+            "exam_theme": "For All",
+            "is_completed": false,
+            "is_test_attempted": false,
+            "terms_url": "",
+            "positive_marks": "0.00",
+            "negative_marks": "0.00",
+            "date_time": "2025-12-28 06:00:00",
+            "enddatetime": "2025-12-27 06:00:00",
+            "type": "NORMAL",
+            "option_count": "4",
+            "solution_url": "",
+            "solution_pdf": "",
+            "solution_pdf2": "",
+            "max_test_attempt": "-1",
+            "show_result": "1",
+            "show_rank": "1",
+            "show_solutions": "1",
+            "show_total_students": "1",
+            "enable_negative_marks_for_fifth_option": "1",
+            "all_question_compulsary": "0"
+        },
         {
             "id": "678",
             "title": "UPP SI (21 December 2025)",
@@ -2083,7 +2208,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-12-20-0_05779104534535351.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEyLTIwLTBfMDU3NzkxMDQ1MzQ1MzUzNTEucGRm&Expires=1766298191&KeyName=appx-pdf-keyset&Signature=ZF01dP3mTXEIpTTp7rOIH3MML1Nlv84Bp__yItgqqPqjl7_oG8jqEjG6yx_Xyz913qg3tpxjyQ9Xlmy4LNQcDQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-21-0_9108011665802587.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMjEtMF85MTA4MDExNjY1ODAyNTg3LnBkZg&Expires=1766884219&KeyName=appx-pdf-keyset&Signature=_G044RV7D0wrvwI8UBpa081L7o8dCNVRI2irA07grYIfLeF1NHcpKJnoD309iw18VMYAqZjeksCJtHMLW6kVCw",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2115,7 +2240,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-14-0_21601949520999753.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMTQtMF8yMTYwMTk0OTUyMDk5OTc1My5wZGY&Expires=1766304525&KeyName=appx-pdf-keyset&Signature=4LPQ4_c9-jgxTIXq688BApm-doqWf7jsQmlQbiI2NRg-JrAKmwH8DZcTkzHksyZoa6FJ2RB9ynKlN0lDvOjVCw",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-14-0_21601949520999753.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMTQtMF8yMTYwMTk0OTUyMDk5OTc1My5wZGY&Expires=1766887952&KeyName=appx-pdf-keyset&Signature=houyYKbWHdSHxpC5Qzj4hibLYmVQ-Ia1Ro1UD5SpbgH-O-5tQwkblUzOpntNJu0Bwq8WY6TKu-KYgCdQZFUPBg",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2146,7 +2271,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-12-07-0_36878600887819324.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEyLTA3LTBfMzY4Nzg2MDA4ODc4MTkzMjQucGRm&Expires=1766299266&KeyName=appx-pdf-keyset&Signature=XDRpsnFGy52iiybc8-gK9aCEZkcRiluS9nW5C8780OJka714HGBv3d7P_QVHFqDXONGwrrn9jReqgoS2zc5OBw",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-12-07-0_36878600887819324.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEyLTA3LTBfMzY4Nzg2MDA4ODc4MTkzMjQucGRm&Expires=1766886168&KeyName=appx-pdf-keyset&Signature=0bh7qwkCe1lzhAfrpT8QkURipXwBV90gfEyBuxEAIl2r3uh7Gz-s98TtD5vtKsLHp8GbVoDAQJgaCjIYyNMTDA",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2178,7 +2303,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-11-29-0_39177290142123233.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTExLTI5LTBfMzkxNzcyOTAxNDIxMjMyMzMucGRm&Expires=1766302529&KeyName=appx-pdf-keyset&Signature=KoJdcex3iAAeWuYFLJ7tq5L1o9hB2VacU_sV376nyRCUwksW1B-su0S7UudwQPcQ37NuNmb0F3WfUbpS0z4tAQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-11-29-0_39177290142123233.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTExLTI5LTBfMzkxNzcyOTAxNDIxMjMyMzMucGRm&Expires=1766885736&KeyName=appx-pdf-keyset&Signature=CB-9SYCIUrOaTj7PuLDTNxVKapzuLlWkqLJTgKLiNu1UZcdv1W92P9rMHOm7pBUXXFD6ZujhipIoMo3UzjiXCg",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2210,7 +2335,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-23-0_09087922521775782.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMjMtMF8wOTA4NzkyMjUyMTc3NTc4Mi5wZGY&Expires=1766305858&KeyName=appx-pdf-keyset&Signature=2pdbn3hcgBmi6WD4LYGz33-LNjN-lCYJPmqmlnxZGT7gKg1u2soS484R-vHrgXkHee9Hk1r8S0Elg7Wlinl4AQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-23-0_09087922521775782.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMjMtMF8wOTA4NzkyMjUyMTc3NTc4Mi5wZGY&Expires=1766887906&KeyName=appx-pdf-keyset&Signature=Q07s--7kxxfOP3cDx7EJmHdlg1-WKFGUwlUKbmjenjjNMAhtOsQMhc9ePHYW-MRGblTp2-nsmRLRB7CKGuMvDg",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2242,7 +2367,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-17-0_8959176218319771.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMTctMF84OTU5MTc2MjE4MzE5NzcxLnBkZg&Expires=1766304123&KeyName=appx-pdf-keyset&Signature=ZyljLeTEQ-ky6BhPqIaUHphl1k_SVlUJ3AMU1uURMZjV7csh4yZjLges2k5bB7wmWNhP4PL_i9YxaLE44xmlDg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-17-0_8959176218319771.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMTctMF84OTU5MTc2MjE4MzE5NzcxLnBkZg&Expires=1766887889&KeyName=appx-pdf-keyset&Signature=Wlmv9DYlPOW7MkrRKDtR3GdvRKwe7AuYheOYqc0LgduZzvPiJD9WflEBWms-R-aaE1EDXw5gPl18mE6-woRlCA",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2274,7 +2399,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-11-08-0_7319589892118754.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTExLTA4LTBfNzMxOTU4OTg5MjExODc1NC5wZGY&Expires=1766298689&KeyName=appx-pdf-keyset&Signature=vRltP6KdLMAPaSbwTgNrf-OI3LA8wAGkn8aB-N05ATSgdEBx21Dxa2G9y8MUxpJ2AaLxYkx8FoMOHvmkiDp6Aw",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-11-08-0_7319589892118754.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTExLTA4LTBfNzMxOTU4OTg5MjExODc1NC5wZGY&Expires=1766885493&KeyName=appx-pdf-keyset&Signature=Jrw9i581F8u2zxzfNq_A5MzCcxP-Q9B_PeOhYp2PO5NGZMYr70ApoQaF3NKxrSe9WcOW8SMQ1f78ZdcBvLE1AA",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2306,7 +2431,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-11-01-0_08718233805971731.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTExLTAxLTBfMDg3MTgyMzM4MDU5NzE3MzEucGRm&Expires=1766305361&KeyName=appx-pdf-keyset&Signature=ndF4FNCdvL611s2wHGJek_ia3pqbPUEvjmfHnw5MUML_wP5RRMPSZS31Bs70VnP1LTwcLxLOEU4HlcAwMwaUAg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-11-01-0_08718233805971731.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTExLTAxLTBfMDg3MTgyMzM4MDU5NzE3MzEucGRm&Expires=1766885537&KeyName=appx-pdf-keyset&Signature=IDzI4zswNmxCeLwURncbTICv7EYoUKMFQnxFDXq1lHy1ZHQTvaKlU4L2wg_e0e5mMmmpVzsGv_GDuh6y1XxOBw",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2338,7 +2463,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-26-0.8675393536579654.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTI2LTAuODY3NTM5MzUzNjU3OTY1NC5wZGY&Expires=1766302511&KeyName=appx-pdf-keyset&Signature=xxzQKQCtP6DfIW9d3dUDXQlo0xCLKqyx20kyd3mpJiQTBToge52B_N1MfTKUIdmg2O6I4t35ZymttfhyY0tjAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-26-0.8675393536579654.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTI2LTAuODY3NTM5MzUzNjU3OTY1NC5wZGY&Expires=1766889689&KeyName=appx-pdf-keyset&Signature=glNfJJGWNPvHh-UK1TxrM0Mu-GiR_nobYQrIdZwmAdcGIVfvuYN1TZs2BpjlxCrEkn4pZDh5AbsE1emVaTgdAw",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2370,7 +2495,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-19-0.024365902930557404.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTE5LTAuMDI0MzY1OTAyOTMwNTU3NDA0LnBkZg&Expires=1766303797&KeyName=appx-pdf-keyset&Signature=4A5nhuzYXlBf-1kgj4XmeXWVsXjepAjh_Id8j6JHMmCO4u9dx4czDsxb_TBxencH4WAB0gRzClyTRpwWeVzPCA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-19-0.024365902930557404.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTE5LTAuMDI0MzY1OTAyOTMwNTU3NDA0LnBkZg&Expires=1766884954&KeyName=appx-pdf-keyset&Signature=Ic1scDWEipoCIkFyv3Ztc1z93B-nOTGFn5J4H9Wl_psChAUDXtIt8wmD4E1IyAFfXVNW6azxFkXYjWp5WT28Dw",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2401,7 +2526,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-10-12-0.10948371202760965.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEwLTEyLTAuMTA5NDgzNzEyMDI3NjA5NjUucGRm&Expires=1766297363&KeyName=appx-pdf-keyset&Signature=pG0J03qysWkdMQVMErUw1PeofyZvxSbOhVfSDeG5EckAfbDO2ARQTRYqhF2FDg71yW4qMO3Nw1Hb6Utq7Ss_CQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-10-12-0.10948371202760965.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEwLTEyLTAuMTA5NDgzNzEyMDI3NjA5NjUucGRm&Expires=1766883586&KeyName=appx-pdf-keyset&Signature=fRTvTCsGfsEo1UEQJgUesiB-1cJyEeuBa6gBYnu5-lwb0OwmWhDp03C2bQ-3a8TqGGZ_ZqYJxWYkWfVvDg0JDg",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2433,7 +2558,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-10-05-0.11200615044600837.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEwLTA1LTAuMTEyMDA2MTUwNDQ2MDA4MzcucGRm&Expires=1766306110&KeyName=appx-pdf-keyset&Signature=Oi9DvcSxuG2s9LQQCK6qAoEsrVmJN1u7wVgVbrqKd9AQBVvKxeGe9zvxb6uEgMzxgrf7kRpXVIG51zXFKyJXCg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-10-05-0.11200615044600837.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTEwLTA1LTAuMTEyMDA2MTUwNDQ2MDA4MzcucGRm&Expires=1766886961&KeyName=appx-pdf-keyset&Signature=lEujcQ0SqQ26NrhVIzXcaG1eDFrlDKCyEJvuLMOzus9wvdY48xTK_u1KfgrLFnT6VIqvPspV4Rd4oedw7eGdBQ",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2465,7 +2590,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-09-28-0.5083662389757941.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTA5LTI4LTAuNTA4MzY2MjM4OTc1Nzk0MS5wZGY&Expires=1766305206&KeyName=appx-pdf-keyset&Signature=FRe9Oo3RnjxVxpxfORbYVjI0p_dbNfAGeK05JQXYD7stl9r8AhI9W7E5fSgWZHD9JyGvfDyKl1HVqdcHXzGdAQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-09-28-0.5083662389757941.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTA5LTI4LTAuNTA4MzY2MjM4OTc1Nzk0MS5wZGY&Expires=1766887039&KeyName=appx-pdf-keyset&Signature=0Q0ty6tWQoaUEDCaQO3ugCZJ06ABn9oljj3T3okz8M2ukBXAZy4LBljFeaYlU54BR_TSIsPz7STOYx8N5p-oBQ",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2497,7 +2622,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-09-21-0.8600245262777045.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTA5LTIxLTAuODYwMDI0NTI2Mjc3NzA0NS5wZGY&Expires=1766298508&KeyName=appx-pdf-keyset&Signature=QZ54Harys5ZQ430OcxhScRho8L4dPvajPVRHM1VwpupkK5CHNhCjFQxXPpBIUWmSkb3KZdeSb1PbXN6n0xEiCA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-09-21-0.8600245262777045.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTA5LTIxLTAuODYwMDI0NTI2Mjc3NzA0NS5wZGY&Expires=1766887918&KeyName=appx-pdf-keyset&Signature=4Tg_RH3DJxXpOLJkjc_0O9VGqrpQVdNS2lSSRIabA6VWtHaERzfajo7GeXN2QfsUvwmBbiXly91gmjU2f8jPDw",
             "save_flag": "1",
             "exam_theme": "For All",
             "is_completed": false,
@@ -2529,7 +2654,7 @@
             "time": "120",
             "questions": "160",
             "marks": "400",
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-08-31-0.26873029432478057.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTA4LTMxLTAuMjY4NzMwMjk0MzI0NzgwNTcucGRm&Expires=1766301634&KeyName=appx-pdf-keyset&Signature=UNQsUpD7VyS7Kr70CjQAqMAJYCmxlpuSZ3Jh6OHXXb4q-XuiL90Grw3yUV9-K2P_FD_L8QiJXf98cHh4hvSTAw",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/quiz_series\/2025-08-31-0.26873029432478057.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9xdWl6X3Nlcmllcy8yMDI1LTA4LTMxLTAuMjY4NzMwMjk0MzI0NzgwNTcucGRm&Expires=1766886185&KeyName=appx-pdf-keyset&Signature=nGkTRonqQdrjtMoG3554mHnqiVLwZfw6qJpNNBXYml5klG8eUmGgPTpxnf8GpEcFYSZWvEjdGqPSaLcFE7WvAA",
             "save_flag": "0",
             "exam_theme": "For All",
             "is_completed": false,

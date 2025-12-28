@@ -18,8 +18,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
     },
     tests:[
         {
-            "id": "1866",
-            "title": "UP SI ( 21 Dec 2025 )",
+            "id": "1893",
+            "title": "UP SI ( 28 Dec 2025 )",
             "test_series_id": "36",
             "free_flag": 1,
             "time": "120",
@@ -35,15 +35,15 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "pdf_url": "",
             "save_flag": "1",
             "show_result": "1",
-            "result_date_time": "2025-12-20 09:21:48",
+            "result_date_time": "2025-12-27 11:04:45",
             "show_rank": "1",
             "show_solutions": "1",
             "show_pause": "0",
             "attempt_enabled": "1",
             "max_test_attempt": "1",
             "attempt_mandatory": "0",
-            "date_time": "2025-12-21 06:00:00",
-            "upcoming_date_time": "2025-12-21 06:00:00",
+            "date_time": "2025-12-28 06:00:00",
+            "upcoming_date_time": "2025-12-28 06:00:00",
             "enddatetime": "3025-10-26 06:00:00",
             "shuffle_questions": "0",
             "shuffle_options": "0",
@@ -67,11 +67,69 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/targetwithankit_db\/1893\/1893_questions0.6924996975587232.json",
+            "test_questions_url_2": "",
+            "remaining_attempt": "1",
+            "exam_theme": "For All",
+            "language": "en",
+            "all_question_compulsary": "0"
+        },
+        {
+            "id": "1866",
+            "title": "UP SI ( 21 Dec 2025 )",
+            "test_series_id": "36",
+            "free_flag": 1,
+            "time": "120",
+            "questions": "160",
+            "test_solutions_video": "",
+            "test_solutions_link": "",
+            "show_solutions_video": "1",
+            "marks": "400",
+            "partial_marking": "1",
+            "partial_scoring_scheme": "0",
+            "is_completed": false,
+            "is_test_attempted": false,
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-23-0_42581294581876894.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMjMtMF80MjU4MTI5NDU4MTg3Njg5NC5wZGY&Expires=1766884172&KeyName=appx-pdf-keyset&Signature=v3HNpg6he3-qOZNbnrkxpDXN0z-KkC3bILUejQqKojAFa39bVq23yKi7Ahbp0XtqhUNuOU6tokcWfC9ef8ijCg",
+            "save_flag": "1",
+            "show_result": "1",
+            "result_date_time": "2025-12-20 09:21:48",
+            "show_rank": "1",
+            "show_solutions": "1",
+            "show_pause": "0",
+            "attempt_enabled": "1",
+            "max_test_attempt": "1",
+            "attempt_mandatory": "0",
+            "date_time": "2025-12-21 06:00:00",
+            "upcoming_date_time": "2025-12-21 06:00:00",
+            "enddatetime": "3025-10-26 06:00:00",
+            "shuffle_questions": "0",
+            "shuffle_options": "0",
+            "show_sectionselector": "0",
+            "minimumsection": "0",
+            "maximumsection": "100",
+            "password": "",
+            "telegram_link": "https:\/\/t.me\/+P8te4HZv14pmMjJl",
+            "telegram_rank": "-1",
+            "telegram_score": "50.00",
+            "cutoff_score": "305.00",
+            "enable_calculator": "0",
+            "enable_questionpaper": "0",
+            "ui_type": "DEFAULT",
+            "show_total_students": "1",
+            "show_percentile": "1",
+            "show_solutions_image": "0",
+            "test_solutions_image": "",
+            "show_solutions_pdf": "0",
+            "test_solutions_pdf": "",
+            "restrict_part_switching": "0",
+            "enable_random_test_generator": "0",
+            "test_solutions_pdf2": "",
             "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/targetwithankit_db\/1866\/1866_questions0.6732740598232893.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1830",
@@ -88,7 +146,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-14-0_6646579190753679.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMTQtMF82NjQ2NTc5MTkwNzUzNjc5LnBkZg&Expires=1766304724&KeyName=appx-pdf-keyset&Signature=RxigFXAPLa6MYcyZipnyRrSAedZshgT5LogsWVB_tpLBa3IawwCQoaZa_z69ADiDmL6D87qqWvw2zfE3SWrlAQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-14-0_6646579190753679.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMTQtMF82NjQ2NTc5MTkwNzUzNjc5LnBkZg&Expires=1766887853&KeyName=appx-pdf-keyset&Signature=L3WS2Dhz7S_8-MKDU-uQzPN4dsJ9bgaxrEVvEVY3WtX0vLjB_7JsKVGx87SwWToG-7JDpulo7LhXfSAK3lPRDw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-12-12 14:47:27",
@@ -127,7 +185,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1795",
@@ -144,7 +203,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-07-0_8149171272826581.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMDctMF84MTQ5MTcxMjcyODI2NTgxLnBkZg&Expires=1766300469&KeyName=appx-pdf-keyset&Signature=Suip5GbA30Vcj8ZXzOMJxpFOXGJ-8cYSMzXw3W5bh0aJWRIySj1vYJql04kt6ISS2TkhiXpCOtvnweFm-95EDA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-12-07-0_8149171272826581.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTItMDctMF84MTQ5MTcxMjcyODI2NTgxLnBkZg&Expires=1766889772&KeyName=appx-pdf-keyset&Signature=Ye22IWPTt0z6db7u7YLrXYjQSFWboRPhOlFFCHDQsj20lN8z4yOCL3SZXxt17hL-jqlTePT8LEDqfE_G64BGDw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-12-05 08:51:34",
@@ -183,7 +242,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1774",
@@ -200,7 +260,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-29-0_5045087309160919.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMjktMF81MDQ1MDg3MzA5MTYwOTE5LnBkZg&Expires=1766303208&KeyName=appx-pdf-keyset&Signature=rgIWqFgv14qemFu3JT1Dt1wTWL7-WHc7vX0AFPXV06jBxHKaF9KashxjPqaAouS7dkjzQyRU6sK1Nivdsz0bBA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-29-0_5045087309160919.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMjktMF81MDQ1MDg3MzA5MTYwOTE5LnBkZg&Expires=1766884172&KeyName=appx-pdf-keyset&Signature=0Zyqa_ofQ-75fVRgfCWWBk0o2yEcckG74zOpRoJCbjWD_gmHAJ-2L4zUhWf5BYrHbOn_AB0Edmp8pmzakXilCQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-11-28 10:10:12",
@@ -239,7 +299,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1728",
@@ -256,7 +317,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-24-0_6137613226571582.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMjQtMF82MTM3NjEzMjI2NTcxNTgyLnBkZg&Expires=1766299182&KeyName=appx-pdf-keyset&Signature=ZwvTVK83V0RKWPse1B6EQ901CTB_VqPQjMPHkkGLnlsklapX2VZAze5WwxJQ59yNpePY5lCnZVrEbjvtezgjBQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-24-0_6137613226571582.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMjQtMF82MTM3NjEzMjI2NTcxNTgyLnBkZg&Expires=1766887171&KeyName=appx-pdf-keyset&Signature=zdQ45xlMHID4RPCWKRErotaELgPg_tiA04hFTu6Ndtg_8JtC4kQqcixn7EG-5m_iUAhhSXwieGBQBbiYS3w5BA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-11-21 15:07:27",
@@ -295,7 +356,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1659",
@@ -312,7 +374,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-16-0_34312845232606926.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMTYtMF8zNDMxMjg0NTIzMjYwNjkyNi5wZGY&Expires=1766302569&KeyName=appx-pdf-keyset&Signature=_-A-iDvbx27bW8-5E5dJeTk8dcTbbgwxO6oMqerE4MOibVouTPcg1dPSKHJlhWsnd3RgBAHgEICStgVAudgTCQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-16-0_34312845232606926.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMTYtMF8zNDMxMjg0NTIzMjYwNjkyNi5wZGY&Expires=1766885672&KeyName=appx-pdf-keyset&Signature=8jSPB9QIDFWai8hEduSMKFE2To5p9rr3QgJs1QM0-8KCUJ5so5SQ4l1H6fVB_ZVdzxqQhXMUZMUITlxZ0rHeAA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-11-15 11:13:19",
@@ -351,7 +413,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1625",
@@ -368,7 +431,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-09-0_9927381671087613.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMDktMF85OTI3MzgxNjcxMDg3NjEzLnBkZg&Expires=1766303680&KeyName=appx-pdf-keyset&Signature=bJkq6mdtGrP_MDg5An7yqFsMWc5c_hLV4VpUAw-NEk0H2lx2LJ2DSBrT3QHMfqeGDr1d1A6A3nqF7sDesOJVCg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-09-0_9927381671087613.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMDktMF85OTI3MzgxNjcxMDg3NjEzLnBkZg&Expires=1766885672&KeyName=appx-pdf-keyset&Signature=oX-iConiGIoamjHN8tBZCsD_NKrP0rEVrgbcqu00o-59QEacYpEbD5UyIQWyHWlom-ymDn2QPramduSShUZFCg",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-11-07 14:13:37",
@@ -407,7 +470,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1595",
@@ -424,7 +488,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-02-0_038203516457998576.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMDItMF8wMzgyMDM1MTY0NTc5OTg1NzYucGRm&Expires=1766300469&KeyName=appx-pdf-keyset&Signature=U1_hvWhgaNUyxFQcVPD7R6hO5qNVS3bjOgmAvbL7NEenjO7QSdcC2P1dy7HdDNAoPRrZ4Ao2G68JjZUvF8qeAg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-11-02-0_038203516457998576.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTEtMDItMF8wMzgyMDM1MTY0NTc5OTg1NzYucGRm&Expires=1766885672&KeyName=appx-pdf-keyset&Signature=SrCkXg-fsWPsXmeppvd_Di2csVt6wluritMYv9d24fk-ms0GxYXPvrcCkI2Y_JKOX1zh3wY5StJ1Xz4AA1BsCw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-11-01 11:19:59",
@@ -463,7 +527,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1570",
@@ -480,7 +545,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-25-0_5764723043489614.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMjUtMF81NzY0NzIzMDQzNDg5NjE0LnBkZg&Expires=1766304377&KeyName=appx-pdf-keyset&Signature=XS8aOubrL6tFwSHKoOExJozVTnnIXtbUyMh2td6lpNqz9VROmF0HFm93NX-bC-Fw4LeHx6T9OdRpJAo953KlDA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-25-0_5764723043489614.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMjUtMF81NzY0NzIzMDQzNDg5NjE0LnBkZg&Expires=1766884486&KeyName=appx-pdf-keyset&Signature=MQF2UTiJq8oaieOkwTz87SHueGOMGlwP66mpVpVt5B_1FJrmfH_dmFmViuvw9Cp21GGD8IexIxsuwQCZK6SLBQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-10-24 08:09:42",
@@ -519,7 +584,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1492",
@@ -536,7 +602,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-19-0_8923569685741896.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMTktMF84OTIzNTY5Njg1NzQxODk2LnBkZg&Expires=1766300469&KeyName=appx-pdf-keyset&Signature=kWWqkV-Lc6vBpISBDz3cktq_AQnoGGkGI04nXylJQbSEnRvmjvMnuKWxMx48Lw-Qk8QYpSgiWrGqn_X-xDeRBQ",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-19-0_8923569685741896.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMTktMF84OTIzNTY5Njg1NzQxODk2LnBkZg&Expires=1766884172&KeyName=appx-pdf-keyset&Signature=ho5TuW-c6t4vWhzLvA-PsxH2ZDqiazhB-vkN741yAKkMaL70PYjuilsqX0QUB3pLp7msDfkiUk6wiw6ewFDgDg",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-10-17 09:31:45",
@@ -575,7 +641,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1475",
@@ -592,7 +659,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-12-0_18917929948587986.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMTItMF8xODkxNzkyOTk0ODU4Nzk4Ni5wZGY&Expires=1766299925&KeyName=appx-pdf-keyset&Signature=FodSL-uKCyhIlGaXcxYsBtjKVos8f9_ts7NdKwll3D4M14Secmwii76hYgj1EM-v34hPDGFYWP4oF0aoawU7Cw",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-12-0_18917929948587986.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMTItMF8xODkxNzkyOTk0ODU4Nzk4Ni5wZGY&Expires=1766882908&KeyName=appx-pdf-keyset&Signature=jlIaRGGdZDUo8amYelByxs6NsXizwmyq2qPvNz_bVVwVoMonWARYMXbfvGXqE6bHobY9EgESsEJyoEz3wsduCA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-10-10 09:02:23",
@@ -631,7 +698,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1449",
@@ -648,7 +716,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-04-0_7552517121941428.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMDQtMF83NTUyNTE3MTIxOTQxNDI4LnBkZg&Expires=1766300469&KeyName=appx-pdf-keyset&Signature=UPRtld86o6LibfBmY6p4qD0aMOTaBESyKA-CdtbZV9Ty0--Xeqgn3YNKIfZUQm8G6RF0bOt_297dPDHBfA6uAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-10-04-0_7552517121941428.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMTAtMDQtMF83NTUyNTE3MTIxOTQxNDI4LnBkZg&Expires=1766889563&KeyName=appx-pdf-keyset&Signature=2F7snZoPgWWu_FURvevpEFg3hQoOHwnimfOvPE-oRJj-u2PtK27F4-nFYNf1CWakaMiMzvjq-X1BE8b0I6neDA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-10-03 08:06:01",
@@ -687,7 +755,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1430",
@@ -704,7 +773,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-27-0_2536535218161199.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMjctMF8yNTM2NTM1MjE4MTYxMTk5LnBkZg&Expires=1766303208&KeyName=appx-pdf-keyset&Signature=nVcoMrX-hOSGaVDVCKSvXgNX3GgSmRQyEwCE1sRTaZGxqEPyH_PQyidP6Ln3mFlohOJFyGjLotwj-vfT1-QZCg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-27-0_2536535218161199.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMjctMF8yNTM2NTM1MjE4MTYxMTk5LnBkZg&Expires=1766885672&KeyName=appx-pdf-keyset&Signature=qZhPUuDh3IqqJsnoHSPYp0UVdAVCD0WsGkBnIEbY1xLJYgOnKo1FpwKI-fAaTAnuVGqg-WSU-pohppotAJA3CQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-09-26 10:55:52",
@@ -743,7 +812,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1421",
@@ -760,7 +830,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-21-0_19911726497466198.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMjEtMF8xOTkxMTcyNjQ5NzQ2NjE5OC5wZGY&Expires=1766303974&KeyName=appx-pdf-keyset&Signature=u4uqCequOkH3f938Ok73c7A5Ss_4NSN9tIn3iEKapEDPSupx0mF7m4PBF0R2WIIhupbUkJtkZLlIDmhSIAQHAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-21-0_19911726497466198.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMjEtMF8xOTkxMTcyNjQ5NzQ2NjE5OC5wZGY&Expires=1766884173&KeyName=appx-pdf-keyset&Signature=b-8rnIqJumTZnYVLA0xCn8Hv9-_w73LhPNJ2htFfeLUDTxYFSZ7opuf32vRbQSuuLjq-n39SCstl4FAyo55QAw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-09-19 17:31:03",
@@ -799,7 +869,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1408",
@@ -816,7 +887,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": true,
             "is_test_attempted": true,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-14-0_511181356152757.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMTQtMF81MTExODEzNTYxNTI3NTcucGRm&Expires=1766302569&KeyName=appx-pdf-keyset&Signature=dW2bwcWJWMtbtvWtDwpqHVPtUGjiIIH6uG6f2aKmXncwq7yYa0u-3r-csR-_bE4gYQPWhpJZojxt82qViIBSDg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-14-0_511181356152757.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMTQtMF81MTExODEzNTYxNTI3NTcucGRm&Expires=1766884173&KeyName=appx-pdf-keyset&Signature=iGyrPwqzsoeNEcT0E3dnucycwTl8FjgHpfRPDT4FZmD4I1k7_6jpxKxP_pph-MXrW6kSLceZF6TjPPWbvXV3AQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-09-13 13:01:54",
@@ -855,7 +926,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "0",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1399",
@@ -872,7 +944,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-07-0_8122190620701456.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMDctMF84MTIyMTkwNjIwNzAxNDU2LnBkZg&Expires=1766300470&KeyName=appx-pdf-keyset&Signature=h7cL0y8K7-y2Dr3M5c5yPHMl4J49vDUbHLs6UmxNpsDYg3kG2uyL2rkX80WBHvd1ZV1DxFQBk_mFGZoBdk55Dg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-09-07-0_8122190620701456.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDktMDctMF84MTIyMTkwNjIwNzAxNDU2LnBkZg&Expires=1766887853&KeyName=appx-pdf-keyset&Signature=r3fNOxAS7Kk0pjM3XI7aPvSydZiBYR2Xkb9Dl_Ab5fax3syn1Cr2z42kaJMZ38_ljim9zfnvuD3Kz_7dnreICw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-09-06 05:18:41",
@@ -911,7 +983,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1388",
@@ -928,7 +1001,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-08-31-0_7810276317797495.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDgtMzEtMF83ODEwMjc2MzE3Nzk3NDk1LnBkZg&Expires=1766300470&KeyName=appx-pdf-keyset&Signature=16eQxBMF070kHsqgdJ47RE0-BkHXwsWneJSQLgP_AL2b-AhjC-IyPRE1ke4XhcqXJArwznClWjCwDK1uDmzQCw",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/subject\/2025-08-31-0_7810276317797495.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi9zdWJqZWN0LzIwMjUtMDgtMzEtMF83ODEwMjc2MzE3Nzk3NDk1LnBkZg&Expires=1766887961&KeyName=appx-pdf-keyset&Signature=PUAsRp9FgTBI4WrjWx94V0snLJ5CtOFuhvXDuvVS39_E-AVYUZkpXv7k10behXR0MwPQlzqHmfhOANuO8XOoDQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-29 10:40:30",
@@ -967,7 +1040,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1364",
@@ -1023,7 +1097,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1346",
@@ -1079,7 +1154,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1325",
@@ -1135,7 +1211,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1304",
@@ -1191,7 +1268,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1293",
@@ -1247,7 +1325,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1283",
@@ -1303,7 +1382,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1268",
@@ -1359,7 +1439,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1250",
@@ -1415,7 +1496,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1225",
@@ -1471,7 +1553,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "0",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1204",
@@ -1527,7 +1610,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1194",
@@ -1583,7 +1667,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1170",
@@ -1639,7 +1724,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1126",
@@ -1695,7 +1781,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1112",
@@ -1751,7 +1838,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1091",
@@ -1807,7 +1895,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1074",
@@ -1863,7 +1952,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1043",
@@ -1919,7 +2009,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1023",
@@ -1975,7 +2066,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "1004",
@@ -2031,7 +2123,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "990",
@@ -2087,7 +2180,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "970",
@@ -2143,7 +2237,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "966",
@@ -2199,7 +2294,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "965",
@@ -2255,7 +2351,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "-1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         },
         {
             "id": "964",
@@ -2311,7 +2408,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "-1",
             "exam_theme": "For All",
-            "language": "en"
+            "language": "en",
+            "all_question_compulsary": "0"
         }
     ]
 
@@ -2326,6 +2424,63 @@ export const coachingInstitutes: CoachingInstitute[] = [
     folder_name: 'RWAUPSI',
     repositry_url: '',
     tests: [
+        {
+            "id": "28722",
+            "title": "UPP SI (28 December 2025)",
+            "test_series_id": "407",
+            "free_flag": 1,
+            "time": "120",
+            "questions": "160",
+            "test_solutions_video": "",
+            "test_solutions_link": "",
+            "show_solutions_video": "1",
+            "marks": "400",
+            "partial_marking": "1",
+            "partial_scoring_scheme": "0",
+            "is_completed": false,
+            "is_test_attempted": false,
+            "pdf_url": "",
+            "save_flag": "0",
+            "show_result": "1",
+            "result_date_time": "2025-12-21 06:20:09",
+            "show_rank": "1",
+            "show_solutions": "0",
+            "show_pause": "0",
+            "attempt_enabled": "1",
+            "max_test_attempt": "1",
+            "attempt_mandatory": "0",
+            "date_time": "2025-12-28 06:00:00",
+            "upcoming_date_time": "2025-12-28 06:00:00",
+            "enddatetime": "2027-12-21 06:18:23",
+            "shuffle_questions": "0",
+            "shuffle_options": "0",
+            "show_sectionselector": "0",
+            "minimumsection": "0",
+            "maximumsection": "100",
+            "password": "",
+            "telegram_link": "https:\/\/t.me\/+i7Q9NNSGL-M4ZTE1",
+            "telegram_rank": "-1",
+            "telegram_score": "350.00",
+            "cutoff_score": "330.00",
+            "enable_calculator": "0",
+            "enable_questionpaper": "0",
+            "ui_type": "DEFAULT",
+            "show_total_students": "1",
+            "show_percentile": "1",
+            "show_solutions_image": "0",
+            "test_solutions_image": "",
+            "show_solutions_pdf": "0",
+            "test_solutions_pdf": "",
+            "restrict_part_switching": "0",
+            "enable_random_test_generator": "0",
+            "test_solutions_pdf2": "",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/28722\/28722_questions0.871118484900969.json",
+            "test_questions_url_2": "",
+            "remaining_attempt": "1",
+            "exam_theme": "For All",
+            "language": "hi",
+            "all_question_compulsary": "0"
+        },
         {
             "id": "28402",
             "title": "UPP SI (21 December 2025)",
@@ -2346,7 +2501,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "show_result": "1",
             "result_date_time": "2025-12-14 13:03:02",
             "show_rank": "1",
-            "show_solutions": "0",
+            "show_solutions": "1",
             "show_pause": "0",
             "attempt_enabled": "1",
             "max_test_attempt": "1",
@@ -2376,11 +2531,12 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/28402\/28402_questions0.4772813858507572.json",
+            "test_questions_url": "https:\/\/appx-content-v2.classx.co.in\/test_title_question\/rozgar_db\/28402\/28402_questions0.19577963224220818.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "28033",
@@ -2436,7 +2592,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "27531",
@@ -2492,7 +2649,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "26860",
@@ -2544,11 +2702,12 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/appx-content-v2.classx.co.in\/test_title_question\/rozgar_db\/26860\/26860_questions0.22050304053373782.json",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/26860\/26860_questions0.3365636016569078.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "26536",
@@ -2604,7 +2763,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "26234",
@@ -2660,7 +2820,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "25745",
@@ -2716,7 +2877,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "25407",
@@ -2772,7 +2934,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "25226",
@@ -2828,7 +2991,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "24807",
@@ -2880,11 +3044,12 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/24807\/24807_questions0.6624169332166033.json",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/24807\/24807_questions0.619627062523452.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "24404",
@@ -2940,7 +3105,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "24141",
@@ -2957,7 +3123,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-05-0.8859053959348964.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTA1LTAuODg1OTA1Mzk1OTM0ODk2NC5wZGY&Expires=1766306064&KeyName=appx-pdf-keyset&Signature=hQcRznoqiy5ul4mitOH9vXt22Mr3lo_JZRJutuygVsmOcbH8jccFcDJebMWm4KN_OOTlkI9Fl3gt1zuGHpeFAg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-10-05-0.8859053959348964.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTEwLTA1LTAuODg1OTA1Mzk1OTM0ODk2NC5wZGY&Expires=1766887695&KeyName=appx-pdf-keyset&Signature=goT-xODP8DZ-NegTVzKd7VAPpMnYrHgoFHYHgnkWXGEHiHyEEqzoLrGGWJXs8q9dW4iVsX0BZlA8B1ZB5k_VBQ",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -2996,7 +3162,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "23768",
@@ -3013,7 +3180,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-28-0.8267764948093868.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTI4LTAuODI2Nzc2NDk0ODA5Mzg2OC5wZGY&Expires=1766305698&KeyName=appx-pdf-keyset&Signature=PwMGE_p4e8lEt9XpCmn1RMBqFJK99rLkjJeiftJh8UOwzsudfzhUxHRPzaEjlxWxZcMhhq0o3lMFxHBtMAsiAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-28-0.8267764948093868.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTI4LTAuODI2Nzc2NDk0ODA5Mzg2OC5wZGY&Expires=1766887707&KeyName=appx-pdf-keyset&Signature=gPajhjnR8vHlz7n8b0hC-5BKXqHjB8nnTkqv6-r1bdNxxJeObzPdw5JIFciOgYyCKbkgWAwTTmGw_HaZAASJAw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -3052,7 +3219,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "23322",
@@ -3069,7 +3237,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-21-0.8061082648204303.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTIxLTAuODA2MTA4MjY0ODIwNDMwMy5wZGY&Expires=1766302022&KeyName=appx-pdf-keyset&Signature=zdlOyaV5OywsydxCaFEhQH5UJbc929vdtzj6qztVkK4FmTzjCEU9bDlCupyZHYgmIAubm5snoz4NdVI0jH1sBg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-21-0.8061082648204303.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTIxLTAuODA2MTA4MjY0ODIwNDMwMy5wZGY&Expires=1766888643&KeyName=appx-pdf-keyset&Signature=zAXj_pJrqOKwHoT7WD9o6AC_wvqNdrYcn_Ubdr-VGZDHoWbm7-ilZJx_YcRmDeUZZzm70U63ke05u5ipDkAeAA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -3108,7 +3276,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "22952",
@@ -3125,7 +3294,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-14-0.2710154123148175.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTE0LTAuMjcxMDE1NDEyMzE0ODE3NS5wZGY&Expires=1766304704&KeyName=appx-pdf-keyset&Signature=QyTPWeP_InJTyLkJ8DZ90ikp3IiyLPY7RLWyvE-IZxB_TPZrX6R_aPtjZHn-78JfdkKFmEd5W9JhEsGkCdGLBg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-14-0.2710154123148175.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTE0LTAuMjcxMDE1NDEyMzE0ODE3NS5wZGY&Expires=1766884243&KeyName=appx-pdf-keyset&Signature=Djz8893lvQZTYOd2u1C1irra5X4vqhK0jiOqJWULI6DPqyl2c-nujsZEgdOuQAvRtH5Xa2PvdNlhEeKpqWIZCA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -3164,7 +3333,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "22594",
@@ -3181,7 +3351,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-07-0.48831040545886517.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTA3LTAuNDg4MzEwNDA1NDU4ODY1MTcucGRm&Expires=1766305804&KeyName=appx-pdf-keyset&Signature=m2tVt0122l8VT94NsCPag0_vbR6qHO9YzUP8qaWi93zze2MUCsYqL9-IL-GiayPBmwxtRhYOIhq0pX_8244TAA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-09-07-0.48831040545886517.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA5LTA3LTAuNDg4MzEwNDA1NDU4ODY1MTcucGRm&Expires=1766884441&KeyName=appx-pdf-keyset&Signature=PtaOK-dZkGH-bbkusLmyq8-7P6JbFPX9hSLxjIlyKQUX6EZLuKxSs26Y4HsZKeHbSQSFq8AYg0n70RAsbjDlDw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -3220,7 +3390,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "22226",
@@ -3237,7 +3408,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-31-0.21892882956095916.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTMxLTAuMjE4OTI4ODI5NTYwOTU5MTYucGRm&Expires=1766296712&KeyName=appx-pdf-keyset&Signature=jQQs0-OAIvd1Svga7wVT0b4mb8KMupU8l1TEj7v2Sxhvdj8diESuh2ZOQDDNR0teCv349z8kpE9ZhSECpeeXDA",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-31-0.21892882956095916.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTMxLTAuMjE4OTI4ODI5NTYwOTU5MTYucGRm&Expires=1766888665&KeyName=appx-pdf-keyset&Signature=1axgeowyxUKtWKrbtqCNRwntjgDcA232jwvB3j8hlaRnJUEF08T_G21Cg2BdfRobjfum3okqbAu9_brrzmCJAA",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -3276,7 +3447,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "21859",
@@ -3293,7 +3465,7 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "partial_scoring_scheme": "0",
             "is_completed": false,
             "is_test_attempted": false,
-            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-24-0.7977350829866215.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTI0LTAuNzk3NzM1MDgyOTg2NjIxNS5wZGY&Expires=1766304035&KeyName=appx-pdf-keyset&Signature=10NCjh7bxKoHcm-psEMHW4uWp0QDcvf7D2zKFKPLLu0micGpqzZDVtdvlYGVqUD7NzgXwY5PBjOX3fTUyoRnCg",
+            "pdf_url": "https:\/\/static-db-v2.appx.co.in\/test_series\/2025-08-24-0.7977350829866215.pdf?URLPrefix=aHR0cHM6Ly9zdGF0aWMtZGItdjIuYXBweC5jby5pbi90ZXN0X3Nlcmllcy8yMDI1LTA4LTI0LTAuNzk3NzM1MDgyOTg2NjIxNS5wZGY&Expires=1766884494&KeyName=appx-pdf-keyset&Signature=-Aume6h78Fv38503IVbud8OnWzTWQYvHgmk1LLofejWQMZ7FNsDv1mniwhBgHdEgR-L9Hz2Uxaacwd6lH8UrBw",
             "save_flag": "1",
             "show_result": "1",
             "result_date_time": "2025-08-17 04:12:07",
@@ -3332,7 +3504,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "21376",
@@ -3388,7 +3561,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "21160",
@@ -3444,7 +3618,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "20649",
@@ -3500,7 +3675,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "20527",
@@ -3556,7 +3732,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "20192",
@@ -3612,7 +3789,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19936",
@@ -3668,7 +3846,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19725",
@@ -3724,7 +3903,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19391",
@@ -3780,7 +3960,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19528\/19528_questions0.8502426177597855.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19227",
@@ -3832,11 +4013,12 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19227\/19227_questions0.48499599610556887.json",
+            "test_questions_url": "https:\/\/appx-content-v2.classx.co.in\/test_title_question\/rozgar_db\/19227\/19227_questions0.4048564159574618.json",
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19228\/19228_questions0.20747409379787285.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "19000",
@@ -3892,7 +4074,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/19001\/19001_questions0.5765152004034144.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "18887",
@@ -3948,7 +4131,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/18888\/18888_questions0.7261459495164903.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "18342",
@@ -4004,7 +4188,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/18344\/18344_questions0.5712198010161037.json",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "18005",
@@ -4060,7 +4245,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17743",
@@ -4116,7 +4302,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17542",
@@ -4172,7 +4359,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17290",
@@ -4224,11 +4412,12 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "restrict_part_switching": "0",
             "enable_random_test_generator": "0",
             "test_solutions_pdf2": "",
-            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/17290\/17290_questions0.11482824508519307.json",
+            "test_questions_url": "https:\/\/testseries-assets-v3.classx.co.in\/test_title_question\/rozgar_db\/17290\/17290_questions0.19908837142266878.json",
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "17021",
@@ -4284,7 +4473,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "16758",
@@ -4340,7 +4530,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "0",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         },
         {
             "id": "16627",
@@ -4396,7 +4587,8 @@ export const coachingInstitutes: CoachingInstitute[] = [
             "test_questions_url_2": "",
             "remaining_attempt": "1",
             "exam_theme": "For All",
-            "language": "hi"
+            "language": "hi",
+            "all_question_compulsary": "0"
         }
     ],
     sectionMap: {
