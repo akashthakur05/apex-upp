@@ -1,63 +1,101 @@
 import QuestionViewer from '@/components/question-viewer'
-import { coachingInstitutes } from '@/lib/mock-data'
 import { notFound } from 'next/navigation'
 
 interface Props {
   params: Promise<{ coachingId: string; testId: string }>
 }
 
-export async function generateStaticParams() {
-  const params: Array<{ coachingId: string; testId: string }> = []
+/* ======================================================
+   LOAD MASTER DATA (STATIC SAFE)
+====================================================== */
 
-  coachingInstitutes.forEach((coaching) => {
-    coaching.tests.forEach((test) => {
-      params.push({
-        coachingId: coaching.id,
-        testId: test.id,
-      })
-    })
-  })
-
-  return params
+async function loadCoachingData() {
+  const data = await import('@/lib/data.json')
+  return data.default ?? data
 }
+
+/* ======================================================
+   STATIC PARAMS
+====================================================== */
+
+export async function generateStaticParams() {
+  const { coachingInstitutes } = await loadCoachingData() as any;
+
+  return coachingInstitutes.flatMap((coaching: any) =>
+    coaching.tests.map((test: any) => ({
+      coachingId: coaching.id,
+      testId: test.id,
+    }))
+  )
+}
+
+/* ======================================================
+   METADATA
+====================================================== */
 
 export async function generateMetadata({ params }: Props) {
   const { coachingId, testId } = await params
-  const coaching = coachingInstitutes.find(c => c.id === coachingId)
-  const test = coaching?.tests.find(t => t.id === testId)
+  const { coachingInstitutes } = await loadCoachingData() as any;
+
+  const coaching = coachingInstitutes.find(
+    (c: any) => c.id === coachingId
+  )
+  const test = coaching?.tests.find(
+    (t: any) => t.id === testId
+  )
 
   return {
-    title: `${test?.title || 'Test'} - Questions`,
+    title: `${test?.title ?? 'Test'} - Questions`,
     description: 'Browse MCQ questions from this test',
   }
 }
 
+/* ======================================================
+   LOAD QUESTIONS JSON
+====================================================== */
 
-async function loadQuestions(folder_name: string, testId: string) {
-  if (!folder_name) return null
+async function loadQuestions(folderName: string, testId: string) {
   try {
-    // Import JSON statically so Next can bundle it during export
-    const data = await import(`@/data/${folder_name}/${testId}.json`)
+    const data = await import(`@/data/${folderName}/${testId}.json`)
     return data.default ?? data
-  } catch (e) {
-    console.log("Failed to Fetch :", folder_name, testId)
+  } catch {
+    console.error('❌ Questions JSON not found:', folderName, testId)
     return null
   }
 }
+
+/* ======================================================
+   PAGE
+====================================================== */
+
 export default async function TestPage({ params }: Props) {
   const { coachingId, testId } = await params
-  const coaching = coachingInstitutes.find(c => c.id === coachingId)
-  const test = coaching?.tests.find(t => t.id === testId)
-  console.log(coaching?.folder_name)
-  const questions = await loadQuestions(coaching?.folder_name || '', testId)
+  const { coachingInstitutes } = await loadCoachingData() as any;
+
+  const coaching = coachingInstitutes.find(
+    (c: any) => c.id === coachingId
+  )
+  const test = coaching?.tests.find(
+    (t: any) => t.id === testId
+  )
 
   if (!coaching || !test) {
     notFound()
   }
 
+  const questions = await loadQuestions(
+    coaching.folder_name,
+    testId
+  )
+  
+
   return (
     <main className="min-h-screen bg-background">
-      <QuestionViewer test={test} coaching={coaching} preloadedQuestions={questions} />
+      <QuestionViewer
+        test={test}
+        coaching={coaching}
+        preloadedQuestions={questions}
+      />
     </main>
   )
 }

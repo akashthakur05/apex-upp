@@ -18,6 +18,21 @@ const SOURCES_PATH = path.join(CONFIG_DIR, "sources.json");
 const MOCK_TS_PATH = path.join(LIB_DIR, "mock-data.ts");
 console.log(MOCK_TS_PATH)
 
+
+const sortById= (arr = []) =>
+  [...arr].sort((a, b) => {
+    const ai = Number(a.id);
+    const bi = Number(b.id);
+
+    // numeric ids → descending
+    if (!Number.isNaN(ai) && !Number.isNaN(bi)) {
+      return bi - ai;
+    }
+
+    // fallback to string compare → descending
+    return String(b.id).localeCompare(String(a.id));
+  });
+
 /* ======================================================
    LOGGING
 ====================================================== */
@@ -101,6 +116,7 @@ async function updateMockTs(source, tests) {
 async function processSource(source) {
   log("INFO", `Fetching tests → ${source.name}`);
   const data = await fetchJSON(source.url, source.headers);
+  
 
   if (!Array.isArray(data.test_titles) || !data.test_titles.length) {
     return log("WARN", `No tests → ${source.name}`);
@@ -174,7 +190,9 @@ async function updateDataJson(source, tests) {
     data.push(institute);
   }
 
-  institute.tests = mergeTests(institute.tests, tests);
+  institute.tests = sortById(
+  mergeTests(institute.tests, tests)
+);
 
   await write(DATA_JSON_PATH, stringify(data));
   log("WRITE", `data.json updated → ${source.folder_name}`);

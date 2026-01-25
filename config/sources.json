@@ -2,7 +2,7 @@
     {
         "name": "RWAUPSI",
         "folder_name": "RWAUPSI",
-        "url": "https://rozgarapinew.teachx.in/get/test_titlev2?testseriesid=407&subject_id=-1&userid=3860040&search=&start=-1",
+        "url": "https://rozgarapinew.teachx.in/get/test_titlev2?testseriesid=407&subject_id=-1&userid=-1&search=&start=-1",
         "headers": {
             "auth-key": "appxapi",
             "authorization": "TOKEN",
