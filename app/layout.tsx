@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Footer from '@/components/footer-home';
 import CoachingList from '@/components/coaching-list'
+import 'katex/dist/katex.min.css';
 
 
 const _geist = Geist({ subsets: ["latin"] });

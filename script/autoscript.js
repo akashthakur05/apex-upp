@@ -2,134 +2,198 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
+/* ======================================================
+   PATHS
+====================================================== */
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dataFolder = path.join(__dirname, "..", "data");
+const ROOT = path.join(__dirname, "..");
+const CONFIG_DIR = path.join(ROOT, "config");
+const DATA_DIR = path.join(ROOT, "data");
+const LIB_DIR = path.join(ROOT, "lib");
+
+const SOURCES_PATH = path.join(CONFIG_DIR, "sources.json");
+const MOCK_TS_PATH = path.join(LIB_DIR, "mock-data.ts");
+console.log(MOCK_TS_PATH)
 
 /* ======================================================
-   🔹 GENERIC DATA SOURCES (add more later)
+   LOGGING
 ====================================================== */
 
-const DATA_SOURCES = [
-  {
-    name: "TWAUPSI",
-    url: "https://targetwithankitapi.akamai.net.in/get/test_titlev2?testseriesid=36&subject_id=-1&userid=662472&search=&start=-1",
-    headers: {
-      "auth-key": "appxapi",
-      "authorization": "YOUR_TOKEN_HERE",
-      "source": "website",
-      "user-id": "662472"
-    }
-  },
-  {
-    name: "RWAUPSI",
-    url: "https://rozgarapinew.teachx.in/get/test_titlev2?testseriesid=407&subject_id=-1&userid=3860040&search=&start=-1",
-    headers: {
-      "auth-key": "appxapi",
-      "authorization": "YOUR_TOKEN_HERE",
-      "source": "website",
-      "user-id": "3860040"
-    }
+const log = (t, m) => console.log(`[${t}] ${m}`);
+
+/* ======================================================
+   HELPERS
+====================================================== */
+
+const fetchJSON = async (url, headers = {}) => {
+  const r = await fetch(url, { headers });
+  if (!r.ok) throw new Error(`HTTP ${r.status} → ${url}`);
+  return r.json();
+};
+
+const read = f => fs.promises.readFile(f, "utf8");
+const write = (f, c) => fs.promises.writeFile(f, c);
+
+const mergeTests = (existing = [], incoming = []) => {
+  const map = new Map(existing.map(t => [String(t.id), t]));
+  for (const t of incoming) {
+    map.set(String(t.id), {
+      ...map.get(String(t.id)),
+      ...t,
+      is_completed: false,
+      is_test_attempted: false
+    });
   }
-];
+  return [...map.values()];
+};
 
 /* ======================================================
-   🔹 HELPERS
+   TS PARSING
 ====================================================== */
 
-async function fetchJSON(url, headers = {}) {
-  const res = await fetch(url, { headers });
-  if (!res.ok) throw new Error(`Failed to fetch ${url}`);
-  return res.json();
+function extractInstitutes(ts) {
+  const m = ts.match(
+    /export const coachingInstitutes\s*:[^=]+=\s*(\[[\s\S]*?\]);/
+  );
+
+  if (!m) {
+    throw new Error("coachingInstitutes not found — regex mismatch");
+  }
+
+  return {
+    full: m[0],
+    arr: m[1]
+  };
 }
 
-async function saveJSON(filePath, data) {
-  await fs.promises.writeFile(filePath, JSON.stringify(data, null, 2));
-  console.log("✅ Saved:", filePath);
-}
 
-async function readJSONIfExists(filePath) {
-  if (!fs.existsSync(filePath)) return [];
-  const raw = await fs.promises.readFile(filePath, "utf8");
-  return JSON.parse(raw);
+const parseArray = txt => eval(txt);
+const stringify = obj => JSON.stringify(obj, null, 2);
+
+/* ======================================================
+   UPDATE mock-data.ts
+====================================================== */
+
+async function updateMockTs(source, tests) {
+  const ts = await read(MOCK_TS_PATH);
+  const { full, arr } = extractInstitutes(ts);
+  const institutes = parseArray(arr);
+
+  const inst = institutes.find(i => i.folder_name === source.folder_name);
+  if (!inst) return log("WARN", `Institute missing: ${source.folder_name}`);
+
+  inst.tests = mergeTests(inst.tests, tests);
+
+  const updated =
+    `export const coachingInstitutes: CoachingInstitute[] = ${stringify(institutes)};`;
+
+  await write(MOCK_TS_PATH, ts.replace(full, updated));
+  log("WRITE", `mock-data.ts updated → ${source.folder_name}`);
 }
 
 /* ======================================================
-   🔹 PROCESS ONE DATA SOURCE
+   PROCESS SOURCE
 ====================================================== */
 
 async function processSource(source) {
-  console.log(`\n📡 Fetching source: ${source.name}`);
+  log("INFO", `Fetching tests → ${source.name}`);
+  const data = await fetchJSON(source.url, source.headers);
 
-  const sourceData = await fetchJSON(source.url, source.headers);
-
-  if (!sourceData.test_titles) {
-    console.log("⚠️ No test_titles found");
-    return;
+  if (!Array.isArray(data.test_titles) || !data.test_titles.length) {
+    return log("WARN", `No tests → ${source.name}`);
   }
 
-  const baseDir = path.join(dataFolder, source.name);
-  const sectionDir = path.join(baseDir, "Section");
+  // await updateMockTs(source, data.test_titles);
+  await updateDataJson(source, data.test_titles);
 
-  await fs.promises.mkdir(baseDir, { recursive: true });
+
+  const base = path.join(DATA_DIR, source.folder_name);
+  const sectionDir = path.join(base, "Section");
   await fs.promises.mkdir(sectionDir, { recursive: true });
 
-  const globalSectionsMap = {};
+  const sections = {};
 
-  for (const test of sourceData.test_titles) {
-    const { id, test_questions_url } = test;
-    if (!id || !test_questions_url) continue;
+  for (const t of data.test_titles) {
+    if (!t.id || !t.test_questions_url) continue;
 
-    const testFilePath = path.join(baseDir, `${id}.json`);
+    const testFile = path.join(base, `${t.id}.json`);
+    const questions = fs.existsSync(testFile)
+      ? JSON.parse(await read(testFile))
+      : await fetchJSON(t.test_questions_url, source.headers);
 
-    let testData;
-
-    // 🔹 Skip download if file exists
-    if (fs.existsSync(testFilePath)) {
-      console.log(`⏭️ Skipping download (exists): ${id}`);
-      testData = await readJSONIfExists(testFilePath);
-    } else {
-      console.log(`🌐 Downloading test: ${id}`);
-      testData = await fetchJSON(test_questions_url, source.headers);
-      await saveJSON(testFilePath, testData);
+    if (!fs.existsSync(testFile)) {
+      await write(testFile, stringify(questions));
+      log("FETCH", `Test ${t.id}`);
     }
 
-    // 🔹 Aggregate by section
-    for (const q of testData) {
-      const sectionId = String(q.section_id || "0");
-
-      if (!globalSectionsMap[sectionId]) {
-        globalSectionsMap[sectionId] = [];
-      }
-
-      globalSectionsMap[sectionId].push(q);
+    for (const q of questions) {
+      const sid = String(q.section_id ?? 0);
+      sections[sid] ??= new Map();
+      sections[sid].set(q.id, q);
     }
   }
 
-  // 🔹 Append aggregation into existing section files
-  for (const [sectionId, newQuestions] of Object.entries(globalSectionsMap)) {
-    const sectionPath = path.join(sectionDir, `${sectionId}.json`);
-
-    const existing = await readJSONIfExists(sectionPath);
-    const merged = [...existing, ...newQuestions];
-
-    await saveJSON(sectionPath, merged);
+  for (const [sid, map] of Object.entries(sections)) {
+    const f = path.join(sectionDir, `${sid}.json`);
+    const old = fs.existsSync(f) ? JSON.parse(await read(f)) : [];
+    const merged = new Map(old.map(q => [q.id, q]));
+    for (const [id, q] of map) merged.set(id, q);
+    await write(f, stringify([...merged.values()]));
+    log("WRITE", `Section ${sid}`);
   }
 
-  console.log(`🎉 Finished source: ${source.name}`);
+  log("DONE", source.name);
 }
 
+
+const DATA_JSON_PATH = path.join(LIB_DIR, "data.json");
+
+async function updateDataJson(source, tests) {
+  const data = fs.existsSync(DATA_JSON_PATH)
+    ? JSON.parse(await read(DATA_JSON_PATH))
+    : [];
+
+  let institute = data.find(
+    i => i.folder_name === source.folder_name
+  );
+
+  if (!institute) {
+    institute = {
+      id: String(data.length + 1),
+      name: source.name,
+      logo: "",
+      test_series_id: String(source.test_series_id ?? ""),
+      repository_url: "",
+      folder_name: source.folder_name,
+      sectionMap: {},
+      tests: []
+    };
+    data.push(institute);
+  }
+
+  institute.tests = mergeTests(institute.tests, tests);
+
+  await write(DATA_JSON_PATH, stringify(data));
+  log("WRITE", `data.json updated → ${source.folder_name}`);
+}
+
+
 /* ======================================================
-   🔹 RUN ALL SOURCES
+   RUN
 ====================================================== */
 
 async function run() {
-  for (const source of DATA_SOURCES) {
-    await processSource(source);
-  }
-
-  console.log("\n🚀 All data sources processed.");
+  const sources = JSON.parse(await read(SOURCES_PATH));
+  for (const s of sources) await processSource(s);
+  log("DONE", "All sources processed");
 }
 
-run();
+
+
+run().catch(e => {
+  log("ERROR", e.stack || e.message);
+  process.exit(1);
+});

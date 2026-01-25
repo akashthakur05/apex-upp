@@ -1,0 +1,49 @@
+[
+    {
+        "name": "RWAUPSI",
+        "folder_name": "RWAUPSI",
+        "url": "https://rozgarapinew.teachx.in/get/test_titlev2?testseriesid=407&subject_id=-1&userid=3860040&search=&start=-1",
+        "headers": {
+            "auth-key": "appxapi",
+            "authorization": "TOKEN",
+            "source": "website"
+    
+        },
+        "enabled": true
+    },
+     {
+        "name": "TWAUPSI",
+        "folder_name": "TWAUPSI",
+        "url": "https://targetwithankitapi.akamai.net.in/get/test_titlev2?testseriesid=56&subject_id=-1&userid=662472&search=&start=-1",
+        "headers": {
+            "auth-key": "appxapi",
+            "authorization": "TOKEN",
+            "source": "website",
+            "user-id": "7717"
+        },
+        "enabled": true
+    },
+     {
+        "name": "SUPER100",
+        "folder_name": "SUPER100",
+        "url": "https://super100adityasinghapi.akamai.net.in/get/test_titlev2?testseriesid=18&subject_id=-1&userid=-1&search=&start=-1",
+        "headers": {
+            "auth-key": "appxapi",
+            "authorization": "TOKEN",
+            "source": "website"
+
+        },
+        "enabled": true
+    },
+    {
+        "name": "MUKULUPSI",
+        "folder_name": "MUKULUPSI",
+        "url": "https://mohitsirgurukulapi.akamai.net.in/get/test_titlev2?testseriesid=4&subject_id=-1&userid=7717&search=&start=-1",
+        "headers": {
+            "auth-key": "appxapi",
+            "authorization": "TOKEN",
+            "source": "website"
+        },
+        "enabled": true
+    }
+]
