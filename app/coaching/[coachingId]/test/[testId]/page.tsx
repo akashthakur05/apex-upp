@@ -19,7 +19,7 @@ async function loadCoachingData() {
 ====================================================== */
 
 export async function generateStaticParams() {
-  const { coachingInstitutes } = await loadCoachingData() as any;
+  const coachingInstitutes  = await loadCoachingData() as any;
 
   return coachingInstitutes.flatMap((coaching: any) =>
     coaching.tests.map((test: any) => ({
@@ -35,14 +35,14 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { coachingId, testId } = await params
-  const { coachingInstitutes } = await loadCoachingData() as any;
+  const coachingInstitutes  = await loadCoachingData() as any;
 
-  const coaching = coachingInstitutes.find(
+  const coaching = coachingInstitutes.filter(
     (c: any) => c.id === coachingId
-  )
-  const test = coaching?.tests.find(
+  )[0]
+  const test = coaching?.tests.filter(
     (t: any) => t.id === testId
-  )
+  )[0]
 
   return {
     title: `${test?.title ?? 'Test'} - Questions`,
@@ -70,14 +70,14 @@ async function loadQuestions(folderName: string, testId: string) {
 
 export default async function TestPage({ params }: Props) {
   const { coachingId, testId } = await params
-  const { coachingInstitutes } = await loadCoachingData() as any;
+  const  coachingInstitutes  = await loadCoachingData() as any;
 
-  const coaching = coachingInstitutes.find(
+  const coaching = coachingInstitutes.filter(
     (c: any) => c.id === coachingId
-  )
-  const test = coaching?.tests.find(
+  )[0]
+  const test = coaching?.tests.filter(
     (t: any) => t.id === testId
-  )
+  )[0]
 
   if (!coaching || !test) {
     notFound()
@@ -87,7 +87,7 @@ export default async function TestPage({ params }: Props) {
     coaching.folder_name,
     testId
   )
-  
+
 
   return (
     <main className="min-h-screen bg-background">
