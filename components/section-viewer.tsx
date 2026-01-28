@@ -2,10 +2,12 @@
 
 import Link from "next/link"
 import { sectionNameMap, coachingInstitutes } from '@/lib/mock-data'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { useState } from 'react'
+import { ChevronLeft, ChevronRight, Lightbulb } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { useSearchParams, useRouter } from 'next/navigation'
 import HTMLRenderer from './html-renderer'
 import { Card } from './ui/card'
+import SolutionModal from './solution-modal'
 
 interface Props {
   coachingId: string
@@ -14,8 +16,24 @@ interface Props {
 }
 
 export default function SectionViewer({ coachingId, sectionId, questionlist }: Props) {
+  const searchParams = useSearchParams()
+  const router = useRouter()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<number | null>(null)
+  const [showSolution, setShowSolution] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  // Initialize question from query parameter on mount
+  useEffect(() => {
+    setMounted(true)
+    const questionParam = searchParams.get('question')
+    if (questionParam) {
+      const questionIndex = parseInt(questionParam) - 1 // Convert 1-indexed to 0-indexed
+      if (questionIndex >= 0 && questionIndex < questionlist.length) {
+        setCurrentIndex(questionIndex)
+      }
+    }
+  }, [searchParams, questionlist.length])
 
   const totalQuestions = questionlist.length
   const currentQuestion = questionlist[currentIndex]
@@ -23,17 +41,28 @@ export default function SectionViewer({ coachingId, sectionId, questionlist }: P
   const sectionName = sectionNameMap[sectionId] || `Section ${sectionId}`
   const coaching = coachingInstitutes.find(c => c.id === coachingId)
 
+  // Update URL when question index changes
+  const updateUrl = (index: number) => {
+    const params = new URLSearchParams(searchParams)
+    params.set('question', String(index + 1)) // Convert 0-indexed to 1-indexed
+    router.push(`?${params.toString()}`, { shallow: true })
+  }
+
   const handleNext = () => {
     if (currentIndex < totalQuestions - 1) {
-      setCurrentIndex(i => i + 1)
+      const newIndex = currentIndex + 1
+      setCurrentIndex(newIndex)
       setSelectedOption(null)
+      updateUrl(newIndex)
     }
   }
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(i => i - 1)
+      const newIndex = currentIndex - 1
+      setCurrentIndex(newIndex)
       setSelectedOption(null)
+      updateUrl(newIndex)
     }
   }
 
@@ -91,14 +120,25 @@ export default function SectionViewer({ coachingId, sectionId, questionlist }: P
       {/* QUESTION */}
       <div className="max-w-4xl mx-auto px-4 py-8 pb-28 md:pb-8">
         <Card className="p-6 md:p-8">
-          {/* QUESTION TEXT */}
-          <div className="mb-8 flex gap-4">
-            <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-              {currentIndex + 1}
+          {/* QUESTION HEADER WITH SOLUTION BUTTON */}
+          <div className="mb-8 flex gap-4 items-start justify-between">
+            <div className="flex gap-4 flex-1">
+              <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold flex-shrink-0">
+                {currentIndex + 1}
+              </div>
+              <div className="flex-1">
+                <HTMLRenderer html={currentQuestion.question} />
+              </div>
             </div>
-            <div className="flex-1">
-              <HTMLRenderer html={currentQuestion.question} />
-            </div>
+            {mounted && currentQuestion.solution_text && (
+              <button
+                onClick={() => setShowSolution(true)}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition whitespace-nowrap ml-4"
+              >
+                <Lightbulb className="w-4 h-4" />
+                Solution
+              </button>
+            )}
           </div>
 
           {/* OPTIONS */}
@@ -172,6 +212,15 @@ export default function SectionViewer({ coachingId, sectionId, questionlist }: P
           </div>
         </div>
       </div>
+
+      {/* SOLUTION MODAL */}
+      {mounted && (
+        <SolutionModal
+          question={currentQuestion}
+          isOpen={showSolution}
+          onClose={() => setShowSolution(false)}
+        />
+      )}
     </main>
   )
 }
