@@ -45,7 +45,7 @@ export default function SectionViewer({ coachingId, sectionId, questionlist }: P
   const updateUrl = (index: number) => {
     const params = new URLSearchParams(searchParams)
     params.set('question', String(index + 1)) // Convert 0-indexed to 1-indexed
-    router.push(`?${params.toString()}`, { shallow: true })
+    router.push(`?${params.toString()}`)
   }
 
   const handleNext = () => {
