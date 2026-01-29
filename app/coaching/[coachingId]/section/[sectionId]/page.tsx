@@ -56,6 +56,6 @@ export default async function SectionQuestionsPage({ params }: Props) {
             sectionId={(await params).sectionId}
             questionlist={questions}
         />
-        // </Suspense>
+         </Suspense>
     );
 }
