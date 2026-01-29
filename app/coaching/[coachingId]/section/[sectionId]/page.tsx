@@ -1,5 +1,6 @@
 import SectionViewer from "@/components/section-viewer";
 import { coachingInstitutes } from "@/lib/mock-data";
+import { Suspense } from "react";
 
 interface PageProps {
     params: {
@@ -49,10 +50,12 @@ export default async function SectionQuestionsPage({ params }: Props) {
     const questions =await  getQuestionsForSectionInCoaching(coachingId, sectionId)
 
     return (
+        <Suspense fallback={null}>
         <SectionViewer
             coachingId={(await params).coachingId}
             sectionId={(await params).sectionId}
             questionlist={questions}
         />
+        // </Suspense>
     );
 }
