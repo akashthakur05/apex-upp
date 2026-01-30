@@ -1,5 +1,5 @@
 import SectionViewer from "@/components/section-viewer";
-import { coachingInstitutes } from "@/lib/mock-data";
+// import { coachingInstitutes } from "@/lib/mock-data";
 import { Suspense } from "react";
 
 interface PageProps {
@@ -9,14 +9,23 @@ interface PageProps {
     };
 }
 
+/* ======================================================
+   LOAD MASTER DATA (STATIC SAFE)
+====================================================== */
+
+async function loadCoachingData() {
+  const data = await import('@/lib/data.json')
+  return data.default ?? data
+}
 
 interface Props {
     params: Promise<{ coachingId: string; sectionId: string ,questionlist:any}>
 }
 export async function generateStaticParams() {
     const params: Array<{ coachingId: string; sectionId: string }> = [];
-
-    coachingInstitutes.forEach((coaching) => {
+    const coachingInstitutes  = await loadCoachingData() as any;
+    debugger
+    coachingInstitutes.forEach((coaching: { sectionMap: {}; id: any; }) => {
         Object.keys(coaching.sectionMap).forEach((id) => {
             params.push({
                 coachingId: coaching.id,
@@ -24,13 +33,15 @@ export async function generateStaticParams() {
             });
         });
     });
-
+    console.log(params,"-----------")
     return params;
 }
 
 
 export async function getQuestionsForSectionInCoaching(coachingId: string, sectionId: string) {
-    const coaching = coachingInstitutes.find((c) => c.id === coachingId);
+    const coachingInstitutes  = await loadCoachingData() as any;
+
+    const coaching = coachingInstitutes.find((c: { id: string; } ) => c.id === coachingId);
     if (!coaching) return [];
 
     const folder = coaching.folder_name;
