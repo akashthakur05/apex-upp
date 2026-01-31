@@ -180,7 +180,7 @@ async function updateDataJson(source, tests) {
     institute = {
       id: String(data.length + 1),
       name: source.name,
-      logo: "",
+      logo: source.logo || '',
       test_series_id: String(source.test_series_id ?? ""),
       repository_url: "",
       folder_name: source.folder_name,

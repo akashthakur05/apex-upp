@@ -22,20 +22,24 @@ interface Props {
     params: Promise<{ coachingId: string; sectionId: string ,questionlist:any}>
 }
 export async function generateStaticParams() {
-    const params: Array<{ coachingId: string; sectionId: string }> = [];
-    const coachingInstitutes  = await loadCoachingData() as any;
-    debugger
-    coachingInstitutes.forEach((coaching: { sectionMap: {}; id: any; }) => {
-        Object.keys(coaching.sectionMap).forEach((id) => {
-            params.push({
-                coachingId: coaching.id,
-                sectionId: id,
-            });
-        });
-    });
-    console.log(params,"-----------")
-    return params;
+  const params: { coachingId: string; sectionId: string }[] = [];
+
+  const coachingInstitutes = await loadCoachingData();
+
+  for (const coaching of coachingInstitutes) {
+    if (!coaching.sectionMap) continue;
+
+    for (const sectionId of Object.keys(coaching.sectionMap)) {
+      params.push({
+        coachingId: String(coaching.id),
+        sectionId: String(sectionId),
+      });
+    }
+  }
+
+  return params;
 }
+
 
 
 export async function getQuestionsForSectionInCoaching(coachingId: string, sectionId: string) {

@@ -2,6 +2,7 @@
     {
         "name": "UPPRWA",
         "folder_name": "UPPRWA",
+        "logo":"/TWA.webp",
         "url": "https://rozgarapinew.teachx.in/get/test_titlev2?testseriesid=406&subject_id=-1&userid=1010983&search=&start=-1",
         "headers": {
             "auth-key": "appxapi",
@@ -19,6 +20,7 @@
     {
         "name": "TWAUPP",
         "folder_name": "TWAUPP",
+        "logo":"/rwa.jpeg",
         "url": "https://targetwithankitapi.akamai.net.in/get/test_titlev2?testseriesid=35&subject_id=-1&userid=662472&search=&start=-1",
         "headers": {
             "auth-key": "appxapi",
