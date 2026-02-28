@@ -13,6 +13,8 @@ import * as htmlToImage from "html-to-image"
 import { isBookmarked, addBookmark, removeBookmark, markTestComplete, unmarkTestComplete, isTestComplete as checkTestComplete } from '@/lib/bookmark-storage'
 import { saveQuestion, isSavedQuestion, isSavedQuestionInCache, addToSavedQuestionsCache, removeFromSavedQuestionsCache } from '@/lib/firebase-saved-questions'
 import { useToast } from '@/components/ui/use-toast'
+import { useCanSaveQuestions } from '@/hooks/use-can-save-questions'
+import { useAuth } from '@/components/auth-provider'
 // import { addBookmark, removeBookmark, isBookmarked, markTestComplete, unmarkTestComplete, isTestComplete as checkTestComplete } from '@/lib/bookmark-storage'
 import { useExamKeyboard } from "@/hooks/useExamKeyboard"
 
@@ -27,6 +29,8 @@ export default function QuestionViewer({ test, coaching, preloadedQuestions }: P
   console.log('Preloaded Questions:', preloadedQuestions, coaching)
   const questions = preloadedQuestions || []
   const { toast } = useToast()
+  const canSaveQuestions = useCanSaveQuestions()
+  const { user } = useAuth()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<number | null>(null)
   const [showSolution, setShowSolution] = useState(false)
@@ -505,6 +509,16 @@ ${pageUrl}
   }
 
   const handleSaveQuestion = async () => {
+    // Check if user can save questions
+    if (!canSaveQuestions) {
+      toast({
+        title: 'Sign In Required',
+        description: 'Please sign in to save questions. Anonymous users cannot save questions.',
+        variant: 'destructive',
+      })
+      return
+    }
+
     try {
       setSavingQuestion(true)
       const isSaved = savedQuestionIds.has(currentQuestion.id)
@@ -858,26 +872,31 @@ ${pageUrl}
 
             {/* Bookmark and Share Buttons */}
             <div className="flex justify-between items-start mb-6 gap-4">
-              <button
-                onClick={() => setShowSavedQuestionsModal(true)}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors text-sm font-medium"
-                title="View saved questions"
-              >
-                <BookOpen className="w-4 h-4" />
-                <span className="hidden sm:inline">View Saved</span>
-              </button>
+              {canSaveQuestions && (
+                <button
+                  onClick={() => setShowSavedQuestionsModal(true)}
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors text-sm font-medium"
+                  title="View saved questions"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  <span className="hidden sm:inline">View Saved</span>
+                </button>
+              )}
               <div className="flex-1" />
               <div className="flex gap-2">
                 <button
                   onClick={handleSaveQuestion}
-                  disabled={savingQuestion}
-                  className={`p-2 rounded-lg transition-colors ${savedQuestionIds.has(currentQuestion.id)
-                    ? 'bg-blue-500 text-white'
-                    : 'bg-muted text-foreground hover:bg-muted/80'
-                    }`}
-                  title="Save question to Firebase"
+                  disabled={savingQuestion || !canSaveQuestions}
+                  className={`p-2 rounded-lg transition-colors ${
+                    !canSaveQuestions
+                      ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                      : savedQuestionIds.has(currentQuestion.id)
+                      ? 'bg-blue-500 text-white'
+                      : 'bg-muted text-foreground hover:bg-muted/80'
+                  }`}
+                  title={canSaveQuestions ? "Save question to Firebase" : "Sign in to save questions"}
                 >
-                  <BookOpen className="w-5 h-5" fill={savedQuestionIds.has(currentQuestion.id) ? 'currentColor' : 'none'} />
+                  <BookOpen className="w-5 h-5" fill={savedQuestionIds.has(currentQuestion.id) && canSaveQuestions ? 'currentColor' : 'none'} />
                 </button>
                 <button
                   onClick={handleBookmark}
