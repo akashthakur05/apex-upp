@@ -13,6 +13,7 @@ const ROOT = path.join(__dirname, "..");
 const CONFIG_DIR = path.join(ROOT, "config");
 const DATA_DIR = path.join(ROOT, "data");
 const LIB_DIR = path.join(ROOT, "lib");
+const PUBLIC_DATA_JSON_PATH = path.join(ROOT, "public", "data.json");
 
 const SOURCES_PATH = path.join(CONFIG_DIR, "sources.json");
 const MOCK_TS_PATH = path.join(LIB_DIR, "mock-data.ts");
@@ -180,11 +181,11 @@ async function updateDataJson(source, tests) {
     institute = {
       id: String(data.length + 1),
       name: source.name,
-      logo: source.logo || '',
+      logo: source.logo || "",
       test_series_id: String(source.test_series_id ?? ""),
       repository_url: "",
       folder_name: source.folder_name,
-      sectionMap: source.sectionMap,
+      sectionMap: source.sectionMap || {},
       tests: []
     };
     data.push(institute);
@@ -193,8 +194,9 @@ async function updateDataJson(source, tests) {
   institute.tests = sortById(
   mergeTests(institute.tests, tests)
 );
-
+  // Not Removing due to backward compatibility with coaching-list.tsx which is using test length to show number of tests available for each institute
   await write(DATA_JSON_PATH, stringify(data));
+  await write(PUBLIC_DATA_JSON_PATH, stringify(data));
   log("WRITE", `data.json updated → ${source.folder_name}`);
 }
 
@@ -205,7 +207,7 @@ async function updateDataJson(source, tests) {
 
 async function run() {
   const sources = JSON.parse(await read(SOURCES_PATH));
-  for (const s of sources) await processSource(s);
+  for (const s of sources) if (s.enabled) await processSource(s);
   log("DONE", "All sources processed");
 }
 

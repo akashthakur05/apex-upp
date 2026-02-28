@@ -1,4 +1,6 @@
+import { ProtectedLayout } from '@/components/protected-layout';
 import QuestionViewer from '@/components/question-viewer'
+import { TestNotReadyUI } from '@/components/TestNotReady';
 import { notFound } from 'next/navigation'
 
 interface Props {
@@ -19,7 +21,7 @@ async function loadCoachingData() {
 ====================================================== */
 
 export async function generateStaticParams() {
-  const coachingInstitutes  = await loadCoachingData() as any;
+  const coachingInstitutes = await loadCoachingData() as any;
 
   return coachingInstitutes.flatMap((coaching: any) =>
     coaching.tests.map((test: any) => ({
@@ -35,7 +37,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { coachingId, testId } = await params
-  const coachingInstitutes  = await loadCoachingData() as any;
+  const coachingInstitutes = await loadCoachingData() as any;
 
   const coaching = coachingInstitutes.filter(
     (c: any) => c.id === coachingId
@@ -70,7 +72,7 @@ async function loadQuestions(folderName: string, testId: string) {
 
 export default async function TestPage({ params }: Props) {
   const { coachingId, testId } = await params
-  const  coachingInstitutes  = await loadCoachingData() as any;
+  const coachingInstitutes = await loadCoachingData() as any;
 
   const coaching = coachingInstitutes.filter(
     (c: any) => c.id === coachingId
@@ -88,14 +90,27 @@ export default async function TestPage({ params }: Props) {
     testId
   )
 
+  console.log('Loaded questions for', coaching.name, test.title, questions ? '✅' : '❌')
 
   return (
-    <main className="min-h-screen bg-background">
-      <QuestionViewer
-        test={test}
-        coaching={coaching}
-        preloadedQuestions={questions}
-      />
-    </main>
+
+    <ProtectedLayout>
+      <main className="min-h-screen bg-background">
+        {/* <ErrorBoundary errorComponent={TestNotReady}> */}
+        {questions ? (
+          <QuestionViewer
+            test={test}
+            coaching={coaching}
+            preloadedQuestions={questions}
+          />
+        ) : (
+          <TestNotReadyUI />
+        )}
+        {/* </ErrorBoundary> */}
+
+      </main>
+    </ProtectedLayout >
   )
 }
+
+

@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useTransition, useMemo } from "react";
-import { coachingInstitutes } from "@/lib/mock-data";
+// import { coachingInstitutes } from "@/lib/data.json";
+import coachingData from '@/lib/data.json'
+
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -27,7 +29,12 @@ export default function QuestionsClient({ coachingId, sectionId }: QuestionsClie
   const [currentPage, setCurrentPage] = useState(0);
   const [isPending, startTransition] = useTransition();
 
-  const coaching = coachingInstitutes.find(c => c.id === coachingId);
+  // const coaching = coachingInstitutes.find(c => c.id === coachingId);
+
+
+ 
+  const coaching = coachingData.find(c => c.id === coachingId)
+
 
   // 🔥 Load all questions ON DEMAND (no useEffect)
   if (!loaded && coaching) {
